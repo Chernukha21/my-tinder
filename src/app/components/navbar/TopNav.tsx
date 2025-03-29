@@ -1,12 +1,14 @@
-import React from 'react';
 import {Navbar, NavbarBrand, NavbarContent} from "@heroui/navbar";
 import {GiMatchTip} from "react-icons/gi";
 import Link from "next/link";
 import {Button} from "@heroui/button";
 import NavLink from "@/app/components/navbar/NavLink";
+import {auth} from "@/auth";
+import UserMenu from "@/app/components/navbar/UserMenu";
 
 
-const TopNav = () => {
+const TopNav = async () => {
+    const session = await auth();
     return (
         <Navbar maxWidth={'xl'}
                 className="bg-gradient-to-r from-purple-400 to-purple-700"
@@ -27,8 +29,10 @@ const TopNav = () => {
                 <NavLink href="/messages" label="Messages"/>
             </NavbarContent>
             <NavbarContent justify="end" className="font-bold">
-                <Button as={Link} href="/login" variant="bordered" className="text-white">Login</Button>
-                <Button as={Link} href="/register" variant="bordered" className="text-white">Register</Button>
+                {session ? (<UserMenu user={session.user}/>) : (<>
+                    <Button as={Link} href="/login" variant="bordered" className="text-white">Login</Button>
+                    <Button as={Link} href="/register" variant="bordered" className="text-white">Register</Button>
+                </>)}
             </NavbarContent>
         </Navbar>
     );

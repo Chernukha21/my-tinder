@@ -1,10 +1,12 @@
 import React from 'react';
+import RegisterForm from "@/app/(auth)/register/RegisterForm";
 
 const RegisterPage = () => {
     return (
-        <div>
-            Register Page
+        <div className="flex items-center justify-center vertical-center">
+            <RegisterForm/>
         </div>
+
     );
 };
 

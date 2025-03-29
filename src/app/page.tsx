@@ -1,14 +1,27 @@
 import {Button} from "@heroui/button";
-import {FaRegSmile} from "react-icons/fa";
-import Link from "next/link";
+import { PiSignOutThin } from "react-icons/pi";
+import {auth, signOut} from "@/auth";
 
-export default function Home() {
-  return (
+export default async function Home() {
+    const session = await auth();
+    return (
     <div>
-      Hello!
-        <p>
-            <Button as={Link} href="/members" color="primary" variant="shadow" startContent={<FaRegSmile />}>Click me</Button>
-        </p>
+      <h1 className="text-3xl">Hello</h1>
+        <h3 className="text-2xl font-semibold">User session data</h3>
+        {session ? (
+            <div>
+                <pre>{JSON.stringify(session, null, 2)}</pre>
+                <form action={async () => {
+                    "use server"
+                    await signOut();
+                }}>
+                    <Button type="submit" color="primary" variant="shadow" startContent={<PiSignOutThin />}>Sign Out</Button>
+                </form>
+            </div>
+        ) : (
+            <div>Not signed in</div>
+        )}
+
     </div>
-  );
+    );
 }
