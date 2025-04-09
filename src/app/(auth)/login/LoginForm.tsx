@@ -19,6 +19,10 @@ const LoginForm = () => {
             mode: "onTouched"
     });
     const onSubmit = async (data:LoginSchema) => {
+<<<<<<< HEAD
+=======
+        console.log(data);
+>>>>>>> 50deb1af6e9ea6480a47b99c817a5c399138bfb4
         const result = await singInUser(data);
         if(result.status === 'success'){
             router.push('/members');

@@ -1,12 +1,24 @@
+<<<<<<< HEAD
 "use client";
+=======
+
+'use client';
+
+>>>>>>> 50deb1af6e9ea6480a47b99c817a5c399138bfb4
 import {Dropdown, DropdownItem, DropdownMenu, DropdownSection, DropdownTrigger} from '@heroui/dropdown';
 import {Avatar} from '@heroui/avatar';
 import Link from 'next/link';
 import { signOutUser } from '@/app/actions/authActions';
+<<<<<<< HEAD
 import {Session} from "next-auth";
 
 type Props = {
     user: Session['user'],
+=======
+
+type Props = {
+    user: {name: string | null; image: string | null} | null
+>>>>>>> 50deb1af6e9ea6480a47b99c817a5c399138bfb4
 }
 
 export default function UserMenu({user}: Props) {
@@ -38,4 +50,8 @@ export default function UserMenu({user}: Props) {
             </DropdownMenu>
         </Dropdown>
     );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 50deb1af6e9ea6480a47b99c817a5c399138bfb4

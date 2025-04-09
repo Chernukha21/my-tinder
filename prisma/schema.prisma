@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 50deb1af6e9ea6480a47b99c817a5c399138bfb4
 generator client {
   provider = "prisma-client-js"
 }
@@ -8,17 +12,30 @@ datasource db {
 }
 
 model Account {
+<<<<<<< HEAD
   id                String  @id @default(cuid())
+=======
+  id                String      @id @default(cuid())
+>>>>>>> 50deb1af6e9ea6480a47b99c817a5c399138bfb4
   userId            String
   type              String
   provider          String
   providerAccountId String
+<<<<<<< HEAD
   refresh_token     String? @db.Text
   access_token      String? @db.Text
   expires_at        Int?
   token_type        String?
   scope             String?
   id_token          String? @db.Text
+=======
+  refresh_token     String?    @db.Text
+  access_token      String?    @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?    @db.Text
+>>>>>>> 50deb1af6e9ea6480a47b99c817a5c399138bfb4
   session_state     String?
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
@@ -27,13 +44,20 @@ model Account {
 }
 
 model User {
+<<<<<<< HEAD
   id            String    @id @default(cuid())
   name          String?
   email         String    @unique
+=======
+  id            String          @id @default(cuid())
+  name          String?
+  email         String          @unique
+>>>>>>> 50deb1af6e9ea6480a47b99c817a5c399138bfb4
   emailVerified DateTime?
   passwordHash  String
   image         String?
   accounts      Account[]
+<<<<<<< HEAD
   member        Member?
 }
 
@@ -61,3 +85,6 @@ model Photo {
   memberId String
   member   Member @relation(fields: [memberId], references: [id], onDelete: Cascade)
 }
+=======
+}
+>>>>>>> 50deb1af6e9ea6480a47b99c817a5c399138bfb4
