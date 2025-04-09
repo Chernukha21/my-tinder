@@ -1,12 +1,9 @@
-import React from 'react';
-import LoginForm from "@/app/(auth)/login/LoginForm";
+import LoginForm from '@/app/(auth)/login/LoginForm';
 
-const LoginPage = () => {
+export default function LoginPage() {
     return (
-        <div className="flex items-center justify-center vertical-center">
-            <LoginForm/>
+        <div className='flex items-center justify-center vertical-center'>
+            <LoginForm />
         </div>
     );
-};
-
-export default LoginPage;
+}

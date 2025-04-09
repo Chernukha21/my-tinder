@@ -1,11 +1,5 @@
-import React from 'react';
-
-const ListsPage = () => {
-    return (
-        <div>
-            Lists
-        </div>
-    );
-};
-
-export default ListsPage;
+export default function ListsPage() {
+  return (
+    <div>ListsPage</div>
+  )
+}

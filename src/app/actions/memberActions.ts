@@ -1,20 +1,23 @@
-import {prisma} from "@/lib/prisma";
-import {auth} from "@/auth";
+'use server';
+
+import {prisma} from '@/lib/prisma';
+import {auth} from '@/auth';
 
 export async function getMembers() {
     const session = await auth();
-    if(!session?.user) return null;
+    if (!session?.user) return null;
 
-    try{
+    try {
         return prisma.member.findMany({
             where: {
                 NOT: {
-                    userId: session.user.id
+                    userId: session.user.id,
                 }
             }
         });
-    }catch(e){
-        console.error(e);
+    } catch (e) {
+        console.log(e);
+        throw e;
     }
 }
 
@@ -27,7 +30,12 @@ export async function getMemberByUserId(userId: string) {
 }
 
 export async function getMemberPhotosByUserId(userId: string) {
-    const member = await prisma.member.findUnique({where: {userId}, select: {photos: true}});
-    if(!member) return null;
+    const member = await prisma.member.findUnique({
+        where: {userId},
+        select: {photos: true}
+    });
+
+    if (!member) return null;
+
     return member.photos;
 }

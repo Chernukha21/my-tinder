@@ -1,20 +1,16 @@
-import React from 'react';
-import {CardBody, CardHeader} from "@heroui/card";
-import {Divider} from "@heroui/divider";
+import {CardBody, CardHeader} from '@heroui/card';
+import {Divider} from '@heroui/divider';
 
-const ChatPage =  () => {
-
+export default function ChatPage() {
     return (
         <>
-            <CardHeader className="text-2xl font-semibold text-secondary">
+            <CardHeader className='text-2xl font-semibold text-secondary'>
                 Chat
             </CardHeader>
-            <Divider/>
+            <Divider />
             <CardBody>
-               Member messages
+                Chat will go here
             </CardBody>
         </>
     );
-};
-
-export default ChatPage;
+}

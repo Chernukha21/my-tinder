@@ -29,7 +29,6 @@ const TopNav = async () => {
                 <NavLink href="/messages" label="Messages"/>
             </NavbarContent>
             <NavbarContent justify="end" className="font-bold">
-<<<<<<< HEAD
                 {session?.user ? (
                     <UserMenu user={session.user} />
                 ) : (
@@ -39,12 +38,10 @@ const TopNav = async () => {
                                 className={'text-white'}>Register</Button>
                     </>
                 )}
-=======
                 {session ? (<UserMenu user={session.user}/>) : (<>
                     <Button as={Link} href="/login" variant="bordered" className="text-white">Login</Button>
                     <Button as={Link} href="/register" variant="bordered" className="text-white">Register</Button>
                 </>)}
->>>>>>> 50deb1af6e9ea6480a47b99c817a5c399138bfb4
             </NavbarContent>
         </Navbar>
     );
