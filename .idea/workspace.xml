@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="addeece1-29ae-4fb1-b54b-eb2f95a8bf3e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/NavLink.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/my-tinder.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/membersData.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/seed.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/login/LoginForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/login/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/login/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/register/RegisterForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/register/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/register/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/actions/authActions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/actions/likeActions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/actions/memberActions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/auth/[...nextauth]" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/auth/route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app/api/auth/[...nextauth]/route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Providers.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/navbar/NavLink.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/navbar/TopNav.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/navbar/UserMenu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/error.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lists/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lists/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/MemberCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/MemberSideBar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/chat/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/loading.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/photos/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/messages/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/messages/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Providers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/NavLink.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/TopNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/TopNav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/UserMenu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/prisma.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/schemas/loginSchema.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/schemas/registerSchema.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/types/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/util.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middeware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2x0HwsL9GwwLsUvwccpuyImYWKQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Study\\LearnNext\\my-own-tinder\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="npm.Next.js: server-side">
+    <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+    <configuration name="Next.js: server-side" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="addeece1-29ae-4fb1-b54b-eb2f95a8bf3e" name="Changes" comment="" />
+      <created>1747068313026</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747068313026</updated>
+      <workItem from="1747068314759" duration="5669000" />
+      <workItem from="1747107600720" duration="602000" />
+      <workItem from="1747307391713" duration="959000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

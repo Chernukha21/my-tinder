@@ -1,5 +1,11 @@
-export default function MessagesPage() {
-  return (
-    <div>MessagesPage</div>
-  )
-}
+import React from 'react';
+
+const MessagesPage = () => {
+    return (
+        <div>
+            Messages
+        </div>
+    );
+};
+
+export default MessagesPage;

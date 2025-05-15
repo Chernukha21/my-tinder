@@ -1,9 +1,11 @@
-import LoginForm from '@/app/(auth)/login/LoginForm';
+import React from 'react';
 
-export default function LoginPage() {
+const LoginPage = () => {
     return (
-        <div className='flex items-center justify-center vertical-center'>
-            <LoginForm />
+        <div>
+            Login Page
         </div>
     );
-}
+};
+
+export default LoginPage;

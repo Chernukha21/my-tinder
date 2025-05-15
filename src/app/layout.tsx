@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Providers from "@/components/Providers";
+import {ReactNode} from "react";
 import TopNav from "@/components/navbar/TopNav";
 
 export const metadata: Metadata = {
@@ -11,14 +12,14 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en">
       <body>
         <Providers>
-          <TopNav />
-          <main className='container mx-auto'>
+          <TopNav/>
+          <main className='container mx-auto p-10'>
             {children}
           </main>
         </Providers>
