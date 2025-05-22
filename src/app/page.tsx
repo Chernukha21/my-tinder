@@ -1,11 +1,24 @@
+import {auth, signOut} from "@/auth";
 import {Button} from "@heroui/button";
-import {FaRegSmile} from "react-icons/fa";
-import Link from "next/link";
+import {BiExit} from "react-icons/bi";
 
 export default async function Home() {
+    const session = await auth();
+    const userData = JSON.stringify(session, null, 2);
     return (
-        <div>
-            <Button as={Link} href="/members" className="border-2 rounded-xl p-2" color="secondary" variant="bordered" startContent={<FaRegSmile size={20}/>}>Click me</Button>
-        </div>
+        <>
+            <h1>Hello app</h1>
+            <h3 className="text-3xl">User Session Data</h3>
+            <div>
+                {session ? <pre>{userData}</pre> : <p>There is no signed user</p>}
+            </div>
+            <form action={async () => {
+                "use server"
+                await signOut()
+            }}>
+                <Button startContent={<BiExit/>} type="submit" variant="bordered" color="secondary">Sign out</Button>
+            </form>
+        </>
+
     );
 }

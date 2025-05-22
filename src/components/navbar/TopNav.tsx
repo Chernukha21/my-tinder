@@ -3,8 +3,11 @@ import {GiMatchTip} from "react-icons/gi";
 import Link from "next/link";
 import {Button} from "@heroui/button";
 import NavLink from "@/components/NavLink";
+import {auth} from "@/auth";
+import UserMenu from "@/components/navbar/UserMenu";
 
-const TopNav = () => {
+const TopNav = async () => {
+    const session = await auth();
     return (
         <Navbar maxWidth="xl" className="bg-gradient-to-r from-blue-500 to-purple-500" classNames={{
             item: [
@@ -24,8 +27,11 @@ const TopNav = () => {
                 <NavLink href="/messages" label="Messages"/>
             </NavbarContent>
             <NavbarContent justify="end">
-                <Button as={Link} href="/login" className="text-white" variant="bordered">Login</Button>
-                <Button as={Link} href="/register" className="text-white" variant="bordered">Register</Button>
+                {session?.user ? (<UserMenu user={session.user}/>) :
+                    (<>
+                    <Button as={Link} href="/login" className="text-white" variant="bordered">Login</Button>
+                    <Button as={Link} href="/register" className="text-white" variant="bordered">Register</Button>
+                </>)}
             </NavbarContent>
         </Navbar>
     );

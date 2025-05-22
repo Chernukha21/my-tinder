@@ -5,62 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="addeece1-29ae-4fb1-b54b-eb2f95a8bf3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/NavLink.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/my-tinder.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(auth)/login/LoginForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(auth)/register/RegisterForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/actions/authActions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/auth/[...nextauth]/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/auth.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navbar/UserMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/prisma.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/schemas/loginSchema.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/schemas/registerSchema.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/membersData.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/seed.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(auth)/login/LoginForm.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(auth)/login/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/login/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(auth)/register/RegisterForm.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(auth)/register/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/register/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/actions/authActions.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/actions/likeActions.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/actions/memberActions.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/auth/[...nextauth]" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/auth/route.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app/api/auth/[...nextauth]/route.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Providers.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/navbar/NavLink.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/navbar/TopNav.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/navbar/UserMenu.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/error.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lists/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lists/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/MemberCard.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/MemberSideBar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/chat/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/loading.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/photos/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/messages/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/messages/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Providers.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/NavLink.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/navbar/TopNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/TopNav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/UserMenu.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/prisma.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/schemas/loginSchema.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/schemas/registerSchema.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/types/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/util.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middeware.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +36,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -96,6 +66,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Study\LearnNext\my-own-tinder\src\lib\schemas" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.Next.js: server-side">
     <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
@@ -127,11 +102,40 @@
       <updated>1747068313026</updated>
       <workItem from="1747068314759" duration="5669000" />
       <workItem from="1747107600720" duration="602000" />
-      <workItem from="1747307391713" duration="959000" />
+      <workItem from="1747307391713" duration="1601000" />
+      <workItem from="1747387800747" duration="63000" />
+      <workItem from="1747401402588" duration="8676000" />
+      <workItem from="1747464683674" duration="5789000" />
+      <workItem from="1747488790853" duration="8927000" />
+      <workItem from="1747920773082" duration="1226000" />
+      <workItem from="1747922072280" duration="46000" />
+      <workItem from="1747922132192" duration="1570000" />
+      <workItem from="1747924232601" duration="5045000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="43e41736-112f-4aa0-a86f-ff7f3c11e296" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="43e41736-112f-4aa0-a86f-ff7f3c11e296">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
