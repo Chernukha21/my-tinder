@@ -10,7 +10,11 @@ export default {
   ],
   theme: {
     darkMode: 'class',
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'dark-gradient': 'linear-gradient(to top, rgba(0,0,0,0.8)), transparent'
+      }
+    },
   },
   plugins: [heroui()],
 } satisfies Config;

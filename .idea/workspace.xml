@@ -5,28 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="addeece1-29ae-4fb1-b54b-eb2f95a8bf3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/(auth)/login/LoginForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(auth)/register/RegisterForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/actions/authActions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/auth/[...nextauth]/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auth.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/UserMenu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/prisma.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/schemas/loginSchema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/schemas/registerSchema.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/memberData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/seed.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/actions/memberActions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/error.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/loading.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/members/MemberCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/members/MemberSideBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/members/[memberId]/chat/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/members/[memberId]/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/members/[memberId]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/members/[memberId]/photos/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/util.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(auth)/login/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/login/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(auth)/register/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/register/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Providers.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/TopNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/TopNav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/actions/authActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/authActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,12 +61,16 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.rainbow.brackets.disable.when&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\Study\\LearnNext\\my-own-tinder\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Study\LearnNext\my-own-tinder\src\app" />
+      <recent name="D:\Study\LearnNext\my-own-tinder\src\lib" />
+      <recent name="D:\Study\LearnNext\my-own-tinder\src\lib\util" />
       <recent name="D:\Study\LearnNext\my-own-tinder\src\lib\schemas" />
     </key>
   </component>
@@ -110,7 +113,15 @@
       <workItem from="1747920773082" duration="1226000" />
       <workItem from="1747922072280" duration="46000" />
       <workItem from="1747922132192" duration="1570000" />
-      <workItem from="1747924232601" duration="5045000" />
+      <workItem from="1747924232601" duration="5208000" />
+      <workItem from="1747983619157" duration="10431000" />
+      <workItem from="1748016919814" duration="827000" />
+      <workItem from="1748017769665" duration="10000" />
+      <workItem from="1748017871438" duration="1326000" />
+      <workItem from="1748069087366" duration="2986000" />
+      <workItem from="1748072169191" duration="48000" />
+      <workItem from="1748072254754" duration="1937000" />
+      <workItem from="1748090895075" duration="5442000" />
     </task>
     <servers />
   </component>
