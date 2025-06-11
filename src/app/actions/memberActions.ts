@@ -18,16 +18,30 @@ export async function getMembers() {
     }
 }
 
-export async function getMemberByUserId(id: string) {
+export async function getMemberByUserId(userId: string) {
     try {
-        return prisma.member.findUnique({ where: { id } });
+        return prisma.member.findUnique({where: {userId}});
     } catch (error) {
         console.log(error);
     }
 }
 
-export async function getMembersPhotosByUserId(id: string) {
-    const member = await prisma.member.findUnique({ where: { id }, select: { photos: true } });
+export async function getMemberById(id: string) {
+    try {
+        return prisma.member.findUnique({where: {id}});
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export async function getMembersPhotosByUserId(userId: string) {
+    const member = await prisma.member.findUnique({where: {userId}, select: {photos: true}});
+    if (!member) return null;
+    return member.photos;
+}
+
+export async function getMembersPhotosById(id: string) {
+    const member = await prisma.member.findUnique({where: {id}, select: {photos: true}});
     if (!member) return null;
     return member.photos;
 }

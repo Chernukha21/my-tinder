@@ -5,21 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="addeece1-29ae-4fb1-b54b-eb2f95a8bf3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/actions/likeActons.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/lists/ListTab.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LikeButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/actions/userActions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/sign-image/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/members/edit/EditForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/members/edit/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/members/edit/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/members/edit/photos/MemberPhotoUpload.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/members/edit/photos/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DeleteButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ImageUploadButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MemberImage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MemberPhotos.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/StarButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/cloudinary.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/schemas/memberEditSchema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/actions/authActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/authActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lists/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lists/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/seed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/seed.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/register/RegisterForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/register/RegisterForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/actions/likeActons.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/likeActons.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/actions/memberActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/memberActions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/members/MemberCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/MemberCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/MemberSideBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/MemberSideBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[memberId]/chat/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[memberId]/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[memberId]/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[memberId]/photos/page.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/members/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/TopNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/TopNav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/UserMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/UserMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/schemas/registerSchema.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/schemas/registerSchema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/util.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="mySelectedFileTypes">
+      <set>
+        <option value="HTML" />
+        <option value="JSX" />
+        <option value="Prisma" />
+        <option value="TypeScript" />
+        <option value="TypeScript JSX" />
+      </set>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,21 +75,29 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
     &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Study/LearnNext/my-own-tinder/src/app/members/edit&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.rainbow.brackets.disable.when&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\Study\\LearnNext\\my-own-tinder\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Study\LearnNext\my-own-tinder\src\app\members\edit" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Study\LearnNext\my-own-tinder\src\app" />
       <recent name="D:\Study\LearnNext\my-own-tinder\src\lib" />
@@ -111,7 +153,27 @@
       <workItem from="1748072169191" duration="48000" />
       <workItem from="1748072254754" duration="1937000" />
       <workItem from="1748090895075" duration="12961000" />
-      <workItem from="1748180233143" duration="5617000" />
+      <workItem from="1748180233143" duration="5656000" />
+      <workItem from="1748279288665" duration="6494000" />
+      <workItem from="1748335985800" duration="4947000" />
+      <workItem from="1748344857760" duration="161000" />
+      <workItem from="1748345193050" duration="731000" />
+      <workItem from="1748421842322" duration="4779000" />
+      <workItem from="1748428510702" duration="55000" />
+      <workItem from="1748428665804" duration="28000" />
+      <workItem from="1748428743929" duration="53000" />
+      <workItem from="1748428819649" duration="3000" />
+      <workItem from="1748428825175" duration="445000" />
+      <workItem from="1748429348766" duration="345000" />
+      <workItem from="1748620720491" duration="5175000" />
+      <workItem from="1748854677323" duration="1203000" />
+      <workItem from="1748858541760" duration="2262000" />
+      <workItem from="1748960295861" duration="6386000" />
+      <workItem from="1748973234910" duration="737000" />
+      <workItem from="1749121995677" duration="12332000" />
+      <workItem from="1749568510778" duration="6266000" />
+      <workItem from="1749654819646" duration="2483000" />
+      <workItem from="1749657618280" duration="1566000" />
     </task>
     <servers />
   </component>

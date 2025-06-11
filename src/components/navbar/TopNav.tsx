@@ -5,9 +5,11 @@ import {Button} from "@heroui/button";
 import NavLink from "@/components/NavLink";
 import {auth} from "@/auth";
 import UserMenu from "@/components/navbar/UserMenu";
+import {getUserInfoForNav} from "@/app/actions/userActions";
 
 const TopNav = async () => {
     const session = await auth();
+    const userInfo = session?.user && await getUserInfoForNav();
     return (
         <Navbar maxWidth="xl" className="bg-gradient-to-r from-blue-500 to-purple-500" classNames={{
             item: [
@@ -22,16 +24,16 @@ const TopNav = async () => {
                 </div>
             </NavbarBrand>
             <NavbarContent justify="center">
-                <NavLink href="/members"  label="Matches"/>
-                <NavLink href="/lists"  label="  Lists"/>
+                <NavLink href="/members" label="Matches"/>
+                <NavLink href="/lists" label="  Lists"/>
                 <NavLink href="/messages" label="Messages"/>
             </NavbarContent>
             <NavbarContent justify="end">
-                {session?.user ? (<UserMenu user={session.user}/>) :
+                {userInfo ? (<UserMenu userInfo={userInfo}/>) :
                     (<>
-                    <Button as={Link} href="/login" className="text-white" variant="bordered">Login</Button>
-                    <Button as={Link} href="/register" className="text-white" variant="bordered">Register</Button>
-                </>)}
+                        <Button as={Link} href="/login" className="text-white" variant="bordered">Login</Button>
+                        <Button as={Link} href="/register" className="text-white" variant="bordered">Register</Button>
+                    </>)}
             </NavbarContent>
         </Navbar>
     );

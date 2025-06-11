@@ -6,22 +6,12 @@ export async function toggleLikeMember(targetUserId: string, isLiked: boolean) {
     try {
         const userId = await getAuthUserId();
 
-        if (!userId) return;
-
-        const targetUser = await prisma.user.findUnique({
-            where: { id: targetUserId },
-        });
-
-        if (!targetUser) {
-            console.log("Target user does not exist.");
-        }
-
         if (isLiked) {
             await prisma.like.delete({
                 where: {
                     sourceUserId_targetUserId: {
                         sourceUserId: userId,
-                        targetUserId: targetUserId,
+                        targetUserId,
                     },
                 },
             });
@@ -29,15 +19,16 @@ export async function toggleLikeMember(targetUserId: string, isLiked: boolean) {
             await prisma.like.create({
                 data: {
                     sourceUserId: userId,
-                    targetUserId: targetUserId,
+                    targetUserId,
                 },
             });
         }
     } catch (error) {
-        console.error(error);
+        console.log(error);
         throw error;
     }
 }
+
 export async function fetchCurrentUserLikeIds(){
     try{
         const userId = await getAuthUserId();

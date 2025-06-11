@@ -1,32 +1,29 @@
 "use client";
 import {Member} from "@prisma/client";
 import {Card, CardBody, Divider, Image, Button, CardFooter} from "@heroui/react";
-import {calculateAge} from "@/lib/util";
+import {calculateAge, transformImageUrl} from "@/lib/util";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
 
 
 type Props = {
     member: Member;
+    navLinks: { label: string, href: string }[]
 }
-const MemberSideBar = ({member}: Props) => {
+
+const MemberSideBar = ({member, navLinks}: Props) => {
     const pathName = usePathname();
-    const basePath = `/members/${member.id}`;
-    const navLinks = [
-        { label: 'Profile', href: `${basePath}` },
-        { label: 'Photos', href: `${basePath}/photos` },
-        { label: 'Chat', href: `${basePath}/chat` },
-    ];
+
     return (
-        <Card className="w-full mt-10 items-center h-[80vh]">
+        <Card className="w-full mt-10 items-center h-[80vh] mb-10">
             <Image
-                src={member.image || '/images/user.png'}
+                src={transformImageUrl(member.image) || '/images/user.png'}
                 alt={member.name || 'user profile'}
                 width={200}
                 height={200}
                 className="rounder-full mt-6 aspect-square object-cover"
             />
-            <CardBody>
+            <CardBody className="h-[50vh] overflow-y-hidden">
                 <div className="flex flex-col items-center">
                     <h1 className="text-2xl font-semibold">{member.name}, {calculateAge(member.dateOfBirth)}</h1>
                     <span className="text-sm">{member.city}</span>
@@ -44,7 +41,7 @@ const MemberSideBar = ({member}: Props) => {
                     }
                 </nav>
             </CardBody>
-            <CardFooter>
+            <CardFooter className="mb-5">
                 <Button as={Link} fullWidth color="secondary" href="/members" variant="bordered" className="mt-4">
                     Go back
                 </Button>
