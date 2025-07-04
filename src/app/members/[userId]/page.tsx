@@ -1,6 +1,6 @@
 import {getMemberById} from "@/app/actions/memberActions";
 import {notFound} from "next/navigation";
-import {CardBody, CardHeader, Divider} from "@heroui/react";
+import CardInnerWrapper from "@/components/CardInnerWrapper";
 
 
 const MemberDetailPage = async ({params}: { params: Promise<{ userId: string }> }) => {
@@ -8,15 +8,7 @@ const MemberDetailPage = async ({params}: { params: Promise<{ userId: string }> 
     const member = await getMemberById(userId);
     if (!member) return notFound;
     return (
-        <>
-            <CardHeader className="text-2xl font-semibold text-secondary">
-                Profile
-            </CardHeader>
-            <Divider/>
-            <CardBody className="p-4">
-                {member.description}
-            </CardBody>
-        </>
+        <CardInnerWrapper header="Profile" body={<div>{member.description}</div>}/>
     )
 };
 

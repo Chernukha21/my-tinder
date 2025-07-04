@@ -2,8 +2,8 @@ import React from 'react';
 import {getAuthUserId} from "@/app/actions/authActions";
 import {getMemberByUserId} from "@/app/actions/memberActions";
 import {notFound} from "next/navigation";
-import {CardBody, CardHeader, Divider} from "@heroui/react";
 import EditForm from "@/app/members/edit/EditForm";
+import CardInnerWrapper from "@/components/CardInnerWrapper";
 
 const EditMemberPage = async () => {
     const userId = await getAuthUserId();
@@ -11,15 +11,7 @@ const EditMemberPage = async () => {
     if (!member) return notFound();
 
     return (
-        <>
-            <CardHeader className='flex flex-row justify-between items-center'>
-                Edit {member.name}'s page
-            </CardHeader>
-            <Divider/>
-            <CardBody>
-                <EditForm member={member}/>
-            </CardBody>
-        </>
+        <CardInnerWrapper header={`Edit ${member.name}'s page`} body={<EditForm member={member}/>}/>
     );
 };
 
