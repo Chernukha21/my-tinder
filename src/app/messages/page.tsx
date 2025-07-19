@@ -9,7 +9,6 @@ const MessagesPage = async ({searchParams}: { searchParams: Promise<{ container:
     const session = await auth();
     const currentUserId = session?.user?.id;
     const messages = await getMessagesByContainer(container);
-    
     return (
         <div className="grid grid-cols-12 gap-5 h-[80vh] mt-10">
             <div className="col-span-3">
@@ -17,7 +16,7 @@ const MessagesPage = async ({searchParams}: { searchParams: Promise<{ container:
             </div>
 
             <div className="col-span-9">
-                <MessagesTable messages={messages} currentUserId={currentUserId ?? ""}/>
+                <MessagesTable initialMessages={messages} currentUserId={currentUserId ?? ""}/>
             </div>
         </div>
     );

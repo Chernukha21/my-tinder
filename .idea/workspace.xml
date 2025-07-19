@@ -5,23 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="addeece1-29ae-4fb1-b54b-eb2f95a8bf3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/actions/messageActions.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/members/[userId]/chat/ChatForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/members/[userId]/chat/MessageBox.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/messages/MessageSideBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/messages/MessagesTable.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CardInnerWrapper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/mappings.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/pusher-auth/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/members/[userId]/chat/MessageList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/messages/MessageTableCell.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewMessageToast.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NotificationToast.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PresenceAvatar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PresenceDot.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/pusher.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/useMessageStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/useMessages.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/useNotificationChannel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/usePresenceChannel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/usePresenceStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/actions/memberActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/memberActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/actions/likeActons.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/likeActons.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/actions/messageActions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/messageActions.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/MemberCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/MemberCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/MemberSideBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/MemberSideBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/chat/MessageBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/[userId]/chat/MessageBox.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/chat/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/[userId]/chat/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/[userId]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/edit/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/edit/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/messages/MessageSideBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/messages/MessageSideBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/messages/MessagesTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/messages/MessagesTable.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/messages/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/messages/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavLink.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Providers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/mappings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/mappings.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/util.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.d.ts" afterDir="false" />
     </list>
@@ -177,7 +190,21 @@
       <workItem from="1751032137967" duration="2943000" />
       <workItem from="1751442688416" duration="5000" />
       <workItem from="1751443608805" duration="376000" />
-      <workItem from="1751630680292" duration="6140000" />
+      <workItem from="1751630680292" duration="7871000" />
+      <workItem from="1751716517773" duration="6701000" />
+      <workItem from="1751726644604" duration="2833000" />
+      <workItem from="1751962244437" duration="5942000" />
+      <workItem from="1752057499990" duration="2894000" />
+      <workItem from="1752060838412" duration="188000" />
+      <workItem from="1752074716984" duration="2652000" />
+      <workItem from="1752480540743" duration="7128000" />
+      <workItem from="1752587002825" duration="11395000" />
+      <workItem from="1752656432190" duration="1415000" />
+      <workItem from="1752658052766" duration="4721000" />
+      <workItem from="1752670859004" duration="2271000" />
+      <workItem from="1752680170742" duration="4758000" />
+      <workItem from="1752765700018" duration="4465000" />
+      <workItem from="1752919311568" duration="2645000" />
     </task>
     <servers />
   </component>

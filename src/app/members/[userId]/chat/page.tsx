@@ -1,15 +1,20 @@
 import CardInnerWrapper from '@/components/CardInnerWrapper';
 import ChatForm from './ChatForm';
 import {getMessageThread} from '@/app/actions/messageActions';
-import MessageBox from './MessageBox';
 import {getAuthUserId} from '@/app/actions/authActions';
 import {getMemberById} from "@/app/actions/memberActions";
+import MessageList from "@/app/members/[userId]/chat/MessageList";
+import {createChatId} from "@/lib/util";
+import {notFound} from "next/navigation";
 
 export default async function ChatPage({params}: { params: Promise<{ userId: string }> }) {
     const currentUserId = await getAuthUserId();
     const {userId: memberId} = await params;
-
     const member = await getMemberById(memberId);
+    if (!member) return notFound();
+    const messagesResult = await getMessageThread(member.userId);
+
+    const chatId = createChatId(currentUserId, memberId);
 
     if (!member) {
         return (
@@ -21,28 +26,14 @@ export default async function ChatPage({params}: { params: Promise<{ userId: str
         );
     }
 
-    const messagesResult = await getMessageThread(member.userId);
-    const messages = messagesResult.status === "success" ? messagesResult.data : [];
-
-    const body = (
-        <div>
-            {messages && messages.length === 0 ? (
-                "No messages to display"
-            ) : (
-                <div>
-                    {messages && messages.map((message) => (
-                        <MessageBox
-                            key={message.id}
-                            message={message}
-                            currentUserId={currentUserId}
-                        />
-                    ))}
-                </div>
-            )}
-        </div>
-    );
-
+    if (!messagesResult) return;
+    
     return (
-        <CardInnerWrapper header="Chat" body={body} footer={<ChatForm/>}/>
+        <CardInnerWrapper
+            header="Chat"
+            body={<MessageList initialMessages={messagesResult} chatId={chatId}
+                               currentUserId={currentUserId}/>}
+            footer={<ChatForm/>}
+        />
     );
 }

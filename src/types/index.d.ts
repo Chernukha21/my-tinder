@@ -23,17 +23,18 @@ type MessageDto = {
     created: string;
     dateRead: string | null;
 
-    senderId: string;
+    senderId: string;         // userId
     senderName: string;
     senderImage: string | null;
+    senderMemberId: string;   // ✅ NEW
 
-    recipientId: string;
+    recipientId: string;      // userId
     recipientName: string;
     recipientImage: string | null;
+    recipientMemberId: string; // ✅ optional if needed
 
     otherUserId: string;
     otherUserName?: string;
     otherUserImage?: string | null;
-
     otherMemberId: string;
 };

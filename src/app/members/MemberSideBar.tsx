@@ -4,6 +4,7 @@ import {Card, CardBody, Divider, Image, Button, CardFooter} from "@heroui/react"
 import {calculateAge, transformImageUrl} from "@/lib/util";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
+import PresenceDot from "@/components/PresenceDot";
 
 
 type Props = {
@@ -23,10 +24,19 @@ const MemberSideBar = ({member, navLinks}: Props) => {
                 height={200}
                 className="rounder-full mt-6 aspect-square object-cover"
             />
-            <CardBody className="h-[50vh] overflow-y-hidden">
+            <CardBody className="h-[50vh] overflow-hidden">
                 <div className="flex flex-col items-center">
-                    <h1 className="text-2xl font-semibold">{member.name}, {calculateAge(member.dateOfBirth)}</h1>
-                    <span className="text-sm">{member.city}</span>
+                    <div className="flex">
+                        <div className="text-2xl">
+                            {member.name},{' '}{calculateAge(member.dateOfBirth)}
+                        </div>
+                        <div>
+                            <PresenceDot member={member}/>
+                        </div>
+                    </div>
+                    <div className="text-sm text-neutral-500">
+                        {member.city}, {member.country}
+                    </div>
                 </div>
                 <Divider className="my-3"/>
                 <nav className="flex flex-col gap-4 p-4 ml-4 text-2xl">
