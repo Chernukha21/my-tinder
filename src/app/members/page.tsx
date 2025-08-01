@@ -2,14 +2,34 @@ import React from 'react';
 import {getMembers} from "@/app/actions/memberActions";
 import MemberCard from "@/app/members/MemberCard";
 import {fetchCurrentUserLikeIds} from "@/app/actions/likeActons";
+import PaginationComponent from "@/components/PaginationComponent";
+import {GetMembersParams} from "@/types";
+import EmptyState from "@/components/EmptyState";
 
-const MembersPage = async () => {
-    const members = await getMembers();
+const MembersPage = async ({searchParams}: { searchParams: Promise<GetMembersParams> }) => {
+    const userFilters = await searchParams;
+    const {items: members, totalCount} = await getMembers(userFilters);
     const likeIds = await fetchCurrentUserLikeIds();
     return (
-        <div className="mt-10 grid grid-cols-2 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-8">
-            {members && members?.map(member => <MemberCard key={member.id} member={member} likeIds={likeIds}/>)}
-        </div>
+        <>
+            {!members || members.length === 0 ? (
+                <EmptyState/>
+            ) : (
+                <>
+                    <div className="mt-10 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-8">
+                        {members &&
+                            members.map(member => (
+                                <MemberCard
+                                    member={member}
+                                    key={member.id}
+                                    likeIds={likeIds}
+                                />
+                            ))}
+                    </div>
+                    <PaginationComponent totalCount={totalCount}/>
+                </>
+            )}
+        </>
     );
 };
 

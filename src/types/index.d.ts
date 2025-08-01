@@ -23,18 +23,49 @@ type MessageDto = {
     created: string;
     dateRead: string | null;
 
-    senderId: string;         // userId
+    senderId: string;
     senderName: string;
     senderImage: string | null;
-    senderMemberId: string;   // ✅ NEW
+    senderMemberId: string;
 
-    recipientId: string;      // userId
+    recipientId: string;
     recipientName: string;
     recipientImage: string | null;
-    recipientMemberId: string; // ✅ optional if needed
+    recipientMemberId: string;
 
     otherUserId: string;
     otherUserName?: string;
     otherUserImage?: string | null;
     otherMemberId: string;
+};
+
+type UserFilters = {
+    ageRange: number[];
+    orderBy: string;
+    gender: string[];
+    withPhoto: boolean;
+}
+
+type PagingParams = {
+    pageNumber: number;
+    pageSize: number;
+};
+
+type PagingResult = {
+    totalPages: number;
+    totalCount: number;
+} & PagingParams;
+
+type PaginatedResponse<T> = {
+    items: T[];
+    totalCount: number;
+};
+
+type GetMembersParams = {
+    pageNumber?: string;
+    pageSize?: string;
+    orderBy?: string;
+    gender?: string;
+    ageRange?: string;
+    withPhoto?: string;
 };
