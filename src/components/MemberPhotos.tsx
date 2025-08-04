@@ -29,7 +29,7 @@ const MemberPhotos = ({photos, editing, mainImageUrl}: Props) => {
         setLoading({isLoading: false, id: '', type: ''});
     }
     const onDelete = async (photo: Photo) => {
-        // if (photo.url === mainImageUrl) return null;
+        if (photo.url === mainImageUrl) return null;
         setLoading({isLoading: true, id: photo.id, type: 'delete'});
         await deleteImage(photo);
         router.refresh();
