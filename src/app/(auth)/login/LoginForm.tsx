@@ -7,22 +7,27 @@ import {zodResolver} from "@hookform/resolvers/zod";
 import {signInUser} from "@/app/actions/authActions";
 import {useRouter} from "next/navigation";
 import {toast} from "react-toastify";
+import Link from "next/link";
+import SocialLogin from "@/app/(auth)/login/SocialLogin";
+
 
 function LoginForm() {
     const router = useRouter();
-    const {register, handleSubmit, formState: {
-        errors, isValid, isSubmitting
-    }} = useForm<LoginSchema>({
+    const {
+        register, handleSubmit, formState: {
+            errors, isValid, isSubmitting
+        }
+    } = useForm<LoginSchema>({
         resolver: zodResolver(loginSchema),
         mode: "onTouched"
     });
 
     const onSubmit = async (data: LoginSchema) => {
         const result = await signInUser(data);
-        if(result.status === "success"){
+        if (result.status === "success") {
             router.push('/');
             router.refresh();
-        }else {
+        } else {
             toast.error(result.error as string);
         }
     }
@@ -58,14 +63,22 @@ function LoginForm() {
                             isInvalid={!!errors.password}
                             errorMessage={errors.password?.message as string}
                         />
-                        <Button
-                            isLoading={isSubmitting}
-                            disabled={!isValid}
-                            fullWidth
-                            color='secondary'
-                            type='submit'>
-                            Login
-                        </Button>
+                        <div className="flex flex-col gap-2 items-center">
+                            <Button
+                                isLoading={isSubmitting}
+                                disabled={!isValid}
+                                fullWidth
+                                color='secondary'
+                                type='submit'>
+                                Login
+                            </Button>
+                            <SocialLogin/>
+                        </div>
+                        <div className="flex justify-center hover:underline cursor-pointer text-sm">
+                            <Link href="/forgot-password">
+                                Forgot password?
+                            </Link>
+                        </div>
                     </div>
                 </form>
             </CardBody>

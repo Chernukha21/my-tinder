@@ -13,10 +13,11 @@ export const metadata: Metadata = {
 export default async function RootLayout({children}: Readonly<{ children: ReactNode }>) {
     const session = await auth();
     const userId = session?.user?.id || null;
+    const profileComplete = session?.user.profileComplete as boolean;
     return (
         <html suppressHydrationWarning lang="en">
         <body>
-        <Providers userId={userId}>
+        <Providers userId={userId} profileComplete={profileComplete}>
             <TopNav/>
             <main className='container mx-auto p-10'>
                 {children}

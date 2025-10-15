@@ -4,11 +4,6 @@ import {hash} from 'bcryptjs';
 
 const prisma = new PrismaClient();
 
-// await prisma.like.deleteMany();   // if you have likes
-// await prisma.photo.deleteMany();
-// await prisma.member.deleteMany();
-// await prisma.user.deleteMany();
-
 
 async function seedMembers() {
     await prisma.like.deleteMany();   // if you have likes
@@ -24,6 +19,7 @@ async function seedMembers() {
                 name: member.name,
                 passwordHash: await hash('password', 10),
                 image: member.image,
+                profileComplete: true,
             },
         });
 

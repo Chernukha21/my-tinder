@@ -4,9 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="addeece1-29ae-4fb1-b54b-eb2f95a8bf3e" name="Changes" comment="">
+    <list default="true" id="addeece1-29ae-4fb1-b54b-eb2f95a8bf3e" name="Changes" comment="&quot;Added some changes to 8 chapter&quot;">
+      <change afterPath="$PROJECT_DIR$/src/app/(auth)/complete-profile/CompleteProfileForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(auth)/complete-profile/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(auth)/forgot-password/ForgotPasswordForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(auth)/forgot-password/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(auth)/login/SocialLogin.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(auth)/register/ProfileForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(auth)/register/UserDetailsForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(auth)/register/success/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(auth)/reset-password/ResetPasswordForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(auth)/reset-password/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(auth)/verify-email/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CardWrapper.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ResultMessage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/mail.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/schemas/forgotPasswordSchema.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/tokens.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/next-auth.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MemberPhotos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MemberPhotos.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/seed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/seed.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/login/LoginForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/login/LoginForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/register/RegisterForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/register/RegisterForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/actions/authActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/authActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/actions/memberActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/memberActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Providers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/Filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Filters.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/schemas/registerSchema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/schemas/registerSchema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/useFilterStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/useFilterStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/useNotificationChannel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/useNotificationChannel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/usePresenceChannel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/usePresenceChannel.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +64,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Chernukha21&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Chernukha21/my-tinder.git&quot;,
+    &quot;accountId&quot;: &quot;82f2bde4-2598-4362-971e-5f32631bdc57&quot;
+  }
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -44,8 +93,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.localhost:3000.executor&quot;: &quot;Debug&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -60,8 +111,10 @@
     &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\Study\\LearnNext\\my-own-tinder\\node_modules\\prettier&quot;,
     &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\Study\\LearnNext\\my-own-tinder\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -71,14 +124,18 @@
       <recent name="D:\Study\LearnNext\my-own-tinder\src\app\members\edit" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Study\LearnNext\my-own-tinder\src\app\(auth)" />
       <recent name="D:\Study\LearnNext\my-own-tinder\src\app" />
       <recent name="D:\Study\LearnNext\my-own-tinder\src\lib" />
       <recent name="D:\Study\LearnNext\my-own-tinder\src\lib\util" />
       <recent name="D:\Study\LearnNext\my-own-tinder\src\lib\schemas" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.Next.js: server-side">
+  <component name="RunManager" selected="JavaScript Debug.localhost:3000">
     <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+    <configuration name="localhost:3000" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
     <configuration name="Next.js: server-side" type="js.build_tools.npm">
@@ -91,11 +148,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.localhost:3000" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.28293.44" />
       </set>
     </attachedChunks>
   </component>
@@ -186,8 +248,36 @@
       <workItem from="1754001400290" duration="1161000" />
       <workItem from="1754038085577" duration="1612000" />
       <workItem from="1754040103400" duration="1047000" />
-      <workItem from="1754316423443" duration="24000" />
+      <workItem from="1754316423443" duration="5478000" />
+      <workItem from="1754328539870" duration="2763000" />
+      <workItem from="1754638540214" duration="3000" />
+      <workItem from="1754819110912" duration="9460000" />
+      <workItem from="1754829880841" duration="1355000" />
+      <workItem from="1755269428055" duration="5000" />
+      <workItem from="1755774872892" duration="10265000" />
+      <workItem from="1755873435555" duration="6137000" />
+      <workItem from="1756104301227" duration="1617000" />
+      <workItem from="1756198105691" duration="60000" />
+      <workItem from="1756210434144" duration="918000" />
+      <workItem from="1756286270233" duration="2000" />
+      <workItem from="1756290551461" duration="2000" />
+      <workItem from="1757342065487" duration="3334000" />
+      <workItem from="1757407586003" duration="3000" />
+      <workItem from="1760008533112" duration="12309000" />
+      <workItem from="1760169509941" duration="5738000" />
+      <workItem from="1760455313875" duration="4000" />
+      <workItem from="1760455596344" duration="5157000" />
+      <workItem from="1760532062978" duration="2568000" />
     </task>
+    <task id="LOCAL-00001" summary="&quot;Added some changes to 8 chapter&quot;">
+      <option name="closed" value="true" />
+      <created>1754316498448</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1754316498448</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,5 +303,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;Added some changes to 8 chapter&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Added some changes to 8 chapter&quot;" />
   </component>
 </project>

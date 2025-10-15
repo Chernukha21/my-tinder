@@ -16,7 +16,8 @@ export default async function Home() {
                 "use server"
                 await signOut()
             }}>
-                <Button startContent={<BiExit/>} type="submit" variant="bordered" color="secondary">Sign out</Button>
+                <Button startContent={<BiExit/>} type="submit" variant="bordered"
+                        color="secondary">{session ? 'Sign out' : 'Sign In'}</Button>
             </form>
         </>
 

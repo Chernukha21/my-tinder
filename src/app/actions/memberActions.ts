@@ -11,7 +11,7 @@ export async function getMembers({
                                      orderBy = 'updated',
                                      pageNumber = '1',
                                      pageSize = '12',
-                                     withPhoto = 'true',
+                                     withPhoto = 'true'
                                  }: GetMembersParams): Promise<PaginatedResponse<Member>> {
     const userId = await getAuthUserId();
 
@@ -19,11 +19,14 @@ export async function getMembers({
     const currentDate = new Date();
     const minDob = addYears(currentDate, -maxAge - 1);
     const maxDob = addYears(currentDate, -minAge);
+
+    const selectedGender = gender.split(',');
+
     const page = parseInt(pageNumber);
     const limit = parseInt(pageSize);
 
     const skip = (page - 1) * limit;
-    const selectedGender = gender.split(',');
+
     try {
         const count = await prisma.member.count({
             where: {
@@ -31,29 +34,31 @@ export async function getMembers({
                     {dateOfBirth: {gte: minDob}},
                     {dateOfBirth: {lte: maxDob}},
                     {gender: {in: selectedGender}},
-                    ...(withPhoto === 'true' ? [{image: {not: null}}] : []),
+                    ...(withPhoto === 'true' ? [{image: {not: null}}] : [])
                 ],
                 NOT: {
-                    userId
-                },
-            },
-        });
+                    userId,
+                }
+            }
+        })
+
         const members = await prisma.member.findMany({
             where: {
                 AND: [
                     {dateOfBirth: {gte: minDob}},
                     {dateOfBirth: {lte: maxDob}},
                     {gender: {in: selectedGender}},
-                    ...(withPhoto === 'true' ? [{image: {not: null}}] : []),
+                    ...(withPhoto === 'true' ? [{image: {not: null}}] : [])
                 ],
                 NOT: {
-                    userId
-                },
+                    userId,
+                }
             },
-            orderBy: {[orderBy]: "desc"},
+            orderBy: {[orderBy]: 'desc'},
             skip,
             take: limit
         });
+
         return {
             items: members,
             totalCount: count

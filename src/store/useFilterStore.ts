@@ -5,6 +5,7 @@ import {create} from "zustand";
 export type FilterState = {
     filters: UserFilters;
     setFilters: (filterName: keyof FilterState['filters'], value: string | number[] | string[] | boolean) => void;
+    reset: (filters: UserFilters) => void;
 };
 
 const useFilterStore = create<FilterState>()(
@@ -14,7 +15,7 @@ const useFilterStore = create<FilterState>()(
                 ageRange: [18, 100],
                 gender: ['male', 'female'],
                 orderBy: 'updated',
-                withPhoto: true,
+                withPhoto: false,
             },
             setFilters: (filterName, value) =>
                 set(state => {

@@ -55,7 +55,6 @@ const Filters = () => {
                     <p className="text-sm">With photo</p>
                     <Switch
                         color="secondary"
-                        defaultSelected
                         size="sm"
                         onChange={selectWithPhoto}
                     />

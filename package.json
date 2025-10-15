@@ -14,6 +14,7 @@
     "@heroui/react": "^2.7.5",
     "@hookform/resolvers": "^5.0.1",
     "@prisma/client": "^6.8.2",
+    "@react-email/render": "^1.2.1",
     "autoprefixer": "^10.4.21",
     "bcryptjs": "^3.0.2",
     "cloudinary": "^2.6.1",
@@ -31,6 +32,7 @@
     "react-hook-form": "^7.56.3",
     "react-icons": "^5.5.0",
     "react-toastify": "^11.0.5",
+    "resend": "^6.0.1",
     "zod": "^3.24.4",
     "zustand": "^5.0.6"
   },

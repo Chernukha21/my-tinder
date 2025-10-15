@@ -10,7 +10,11 @@ import useMessageStore from "@/store/useMessageStore";
 import {useShallow} from "zustand/shallow";
 import {getUnreadMessagesCount} from "@/app/actions/messageActions";
 
-export default function Providers({children, userId}: { children: ReactNode, userId: string | null }) {
+export default function Providers({children, userId, profileComplete}: {
+    children: ReactNode,
+    userId: string | null,
+    profileComplete: boolean
+}) {
     const {updateUnreadCount} = useMessageStore(useShallow(
         state => ({
             updateUnreadCount: state.updateUnreadCount,
@@ -26,8 +30,8 @@ export default function Providers({children, userId}: { children: ReactNode, use
         getUnreadMessagesCount().then(count => setUnreadCount(count));
     }, [setUnreadCount, userId]);
 
-    usePresenceChannel();
-    useNotificationChannel(userId);
+    usePresenceChannel(userId, profileComplete);
+    useNotificationChannel(userId, profileComplete);
     return (
         <HeroUIProvider>
             <ToastContainer position="top-right" className="z-50"/>
