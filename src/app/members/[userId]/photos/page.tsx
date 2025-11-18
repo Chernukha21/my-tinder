@@ -1,11 +1,12 @@
 import React from 'react';
 import {CardBody, CardHeader, Divider, Image} from "@heroui/react";
-import {getMembersPhotosById} from "@/app/actions/memberActions";
+import {getMembersPhotosByUserId} from "@/app/actions/memberActions";
 
 const PhotosPage = async ({params}: { params: Promise<{ userId: string }> }) => {
     const {userId} = await params;
-    const membersPhotos = await getMembersPhotosById(userId);
-    console.log(membersPhotos);
+    // const membersPhotos = await getMembersPhotosById(userId);
+    const membersPhotos = await getMembersPhotosByUserId(userId);
+
     return (
         <>
             <CardHeader className="text-2xl font-semibold text-secondary">

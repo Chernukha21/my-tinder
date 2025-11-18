@@ -71,7 +71,9 @@ export async function getMembers({
 
 export async function getMemberByUserId(userId: string) {
     try {
-        return prisma.member.findUnique({where: {userId}});
+        return prisma.member.findUnique({
+            where: {userId}
+        })
     } catch (error) {
         console.log(error);
     }
@@ -86,9 +88,20 @@ export async function getMemberById(id: string) {
 }
 
 export async function getMembersPhotosByUserId(userId: string) {
-    const member = await prisma.member.findUnique({where: {userId}, select: {photos: true}});
-    if (!member) return null;
-    return member.photos;
+    const currentUserId = await getAuthUserId();
+
+    const member = await prisma.member.findUnique({
+        where: {userId},
+        select: {
+            id: true,
+            userId: true,
+            photos: {
+                where: currentUserId === userId ? {} : {isApproved: true}
+            }
+        }
+    });
+
+    return member?.photos ?? [];
 }
 
 export async function getMembersPhotosById(id: string) {

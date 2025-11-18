@@ -70,13 +70,13 @@ export async function registerUser(
 
         const user = await prisma.user.create({
             data: {
-                ...(name ? {name} : {}),
+                name: name ?? 'Anonymous',
                 email,
                 passwordHash: hashedPassword,
                 profileComplete: true,
                 member: {
                     create: {
-                        ...(name ? {name} : {}),
+                        name: name ?? 'Anonymous',
                         country,
                         dateOfBirth: new Date(dateOfBirth),
                         description,
@@ -238,4 +238,11 @@ export async function completeSocialLoginProfile(data: ProfileSchema): Promise<A
         console.log(error);
         throw error;
     }
+}
+
+export async function getUserRole() {
+    const session = await auth();
+    const role = session?.user?.role;
+    if (!role) throw new Error('bot in role');
+    return role;
 }

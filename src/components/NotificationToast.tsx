@@ -44,7 +44,7 @@ export const newMessageToast = (message: MessageDto) => {
     toast(
         <NotificationToast
             image={message.senderImage}
-            href={`/members/${message.senderMemberId}/chat`}
+            href={`/members/${message.senderId}/chat`}
             title={`${message.senderName} has sent you a new message`}
         />,
     );

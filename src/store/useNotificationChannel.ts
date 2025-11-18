@@ -28,7 +28,7 @@ export const useNotificationChannel = (userId: string | null, profileComplete: b
             if (pathname === '/messages' && searchParams.get('container') !== 'outbox') {
                 add(message);
                 updateUnreadCount(1);
-            } else if (pathname !== `/members/${message.otherMemberId}/chat`) {
+            } else if (pathname !== `/members/${message.senderId}/chat`) {
                 newMessageToast(message);
                 updateUnreadCount(1);
             }

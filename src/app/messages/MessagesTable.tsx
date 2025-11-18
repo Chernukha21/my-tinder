@@ -48,7 +48,7 @@ export default function MessagesTable({initialMessages, nextCursor}: Props) {
                     </TableHeader>
                     <TableBody
                         items={messages}
-                        emptyContent="No messages for this container"
+                        emptyContent="No messages for this page"
                     >
                         {item => (
                             <TableRow

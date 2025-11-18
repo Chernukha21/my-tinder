@@ -8,8 +8,8 @@ datasource db {
 }
 
 model Account {
-  id                String  @id @default(cuid())
   userId            String
+  id                String  @id @default(cuid())
   type              String
   provider          String
   providerAccountId String
@@ -20,7 +20,8 @@ model Account {
   scope             String?
   id_token          String? @db.Text
   session_state     String?
-  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([provider, providerAccountId])
 }
@@ -33,6 +34,7 @@ model User {
   passwordHash    String?
   image           String?
   profileComplete Boolean   @default(false)
+  role            Role      @default(MEMBER)
   accounts        Account[]
   member          Member?
 }
@@ -40,7 +42,7 @@ model User {
 model Member {
   id                String    @id @default(cuid())
   userId            String    @unique
-  name              String?
+  name              String
   gender            String
   dateOfBirth       DateTime
   created           DateTime  @default(now())
@@ -58,9 +60,10 @@ model Member {
 }
 
 model Photo {
-  id       String  @id @default(cuid())
-  url      String
-  publicId String?
+  id         String  @id @default(cuid())
+  url        String
+  publicId   String?
+  isApproved Boolean @default(false)
 
   memberId String
   member   Member @relation(fields: [memberId], references: [id], onDelete: Cascade)
@@ -102,4 +105,9 @@ model Token {
 enum TokenType {
   VERIFICATION
   PASSWORD_RESET
+}
+
+enum Role {
+  ADMIN
+  MEMBER
 }

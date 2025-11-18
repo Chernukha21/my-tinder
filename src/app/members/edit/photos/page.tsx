@@ -8,7 +8,6 @@ export default async function PhotosPage() {
     const userId = await getAuthUserId();
     const member = await getMemberByUserId(userId);
     const photos = await getMembersPhotosByUserId(userId);
-
     return (
         <>
             <CardHeader className="flex items-center justify-between">

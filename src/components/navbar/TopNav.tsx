@@ -11,6 +11,18 @@ import FiltersWrapper from "@/components/navbar/FiltersWrapper";
 const TopNav = async () => {
     const session = await auth();
     const userInfo = session?.user && await getUserInfoForNav();
+
+    const memberLinks = [
+        {href: '/members', label: 'Matches'},
+        {href: '/lists', label: 'Lists'},
+        {href: '/messages', label: 'Messages'},
+    ]
+
+    const adminLinks = [
+        {href: '/admin/moderation', label: 'Photo Moderation'}
+    ];
+
+    const links = session?.user.role === 'ADMIN' ? adminLinks : memberLinks;
     return (
         <>
             <Navbar maxWidth="xl" className="bg-gradient-to-r from-blue-500 to-purple-500" classNames={{
@@ -26,9 +38,7 @@ const TopNav = async () => {
                     </div>
                 </NavbarBrand>
                 <NavbarContent justify="center">
-                    <NavLink href="/members" label="Matches"/>
-                    <NavLink href="/lists" label="  Lists"/>
-                    <NavLink href="/messages" label="Messages"/>
+                    {links.map(link => <NavLink href={link.href} label={link.label} key={link.href}/>)}
                 </NavbarContent>
                 <NavbarContent justify="end">
                     {userInfo ? (<UserMenu userInfo={userInfo}/>) :

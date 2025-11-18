@@ -67,6 +67,9 @@ export async function addImage(url: string, publicId: string) {
 }
 
 export async function setMainImage(photo: Photo) {
+    if (!photo.isApproved) {
+        throw new Error('Photo is not approved');
+    }
     try {
         const userId = await getAuthUserId();
         await prisma.user.update({

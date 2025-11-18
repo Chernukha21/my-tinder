@@ -1,79 +1,77 @@
-import {useRouter, useSearchParams} from "next/navigation";
-import {Key, useCallback, useEffect, useRef, useState} from "react";
-import {MessageDto} from "@/types";
 import {deleteMessage, getMessagesByContainer} from "@/app/actions/messageActions";
-import useMessageStore from "@/store/useMessageStore";
+import {MessageDto} from "@/types";
+import {useSearchParams, useRouter} from "next/navigation";
+import {useState, useCallback, Key, useEffect, useRef} from "react";
+import useMessageStore from "./useMessageStore";
 import {useShallow} from "zustand/shallow";
 
 export const useMessages = (initialMessages: MessageDto[], nextCursor?: string) => {
-    const {set, remove, messages, updateUnreadCount, resetMessages} = useMessageStore(useShallow(
-        state => ({
-            messages: initialMessages,
-            set: state.set,
-            remove: state.remove,
-            updateUnreadCount: state.updateUnreadCount,
-            resetMessages: state.resetMessages,
-        })
-    ));
     const cursorRef = useRef(nextCursor);
+    const {set, remove, messages, updateUnreadCount, resetMessages} = useMessageStore(
+        useShallow(
+            state => ({
+                set: state.set,
+                remove: state.remove,
+                messages: state.messages,
+                updateUnreadCount: state.updateUnreadCount,
+                resetMessages: state.resetMessages
+            })))
+    const router = useRouter();
+    const searchParams = useSearchParams();
+    const isOutbox = searchParams.get('container') === 'outbox';
+    const container = searchParams.get('container');
+    const [isDeleting, setDeleting] = useState({id: '', loading: false});
+    const [loadingMore, setLoadingMore] = useState(false);
+
     useEffect(() => {
         set(initialMessages);
         cursorRef.current = nextCursor;
+
         return () => {
             resetMessages();
         }
-    }, [set, initialMessages, resetMessages, nextCursor]);
-
-    const router = useRouter();
-    const searchParams = useSearchParams();
-    const isOutBox = searchParams.get('container') === 'outbox';
-    const container = searchParams.get('container');
-    const [isDeleting, setDeleting] = useState({
-        id: '', loading: false
-    });
-    const [loadingMore, setIsLoadingMore] = useState(false);
-
-
-    const columns = [
-        {key: isOutBox ? 'recipientName' : 'senderName', label: isOutBox ? 'Recipient' : 'Sender'},
-        {key: 'text', label: 'Message'},
-        {key: 'created', label: isOutBox ? 'Date sent' : 'Date received'},
-        {key: 'actions', label: 'Actions'}
-    ]
+    }, [initialMessages, resetMessages, set, nextCursor]);
 
     const loadMore = useCallback(async () => {
         if (cursorRef.current) {
-            setIsLoadingMore(true);
+            setLoadingMore(true);
             const {messages, nextCursor} = await getMessagesByContainer(container, cursorRef.current);
             set(messages);
             cursorRef.current = nextCursor;
-            setIsLoadingMore(false);
+            setLoadingMore(false);
         }
-    }, [set, container]);
+    }, [container, set])
+
+    const columns = [
+        {key: isOutbox ? 'recipientName' : 'senderName', label: isOutbox ? 'Recipient' : 'Sender'},
+        {key: 'text', label: 'Message'},
+        {key: 'created', label: isOutbox ? 'Date sent' : 'Date received'},
+        {key: 'actions', label: 'Actions'},
+    ];
 
     const handleDeleteMessage = useCallback(async (message: MessageDto) => {
         setDeleting({id: message.id, loading: true});
-        await deleteMessage(message.id, isOutBox);
+        await deleteMessage(message.id, isOutbox);
         remove(message.id);
-        if (!message.dateRead && !isOutBox) updateUnreadCount(-1);
+        if (!message.dateRead && !isOutbox) updateUnreadCount(-1);
         setDeleting({id: '', loading: false});
-    }, [isOutBox, remove, setDeleting, updateUnreadCount]);
+    }, [isOutbox, updateUnreadCount, remove]);
 
-    function handleRowSelect(key: Key) {
-        const message = messages.find((m) => m.id === key);
-        if (!message) return;
-        router.push(`/members/${message.otherMemberId}/chat`);
+    const handleRowSelect = (key: Key) => {
+        const message = messages.find(m => m.id === key);
+        const url = isOutbox ? `/members/${message?.recipientId}` : `/members/${message?.senderId}`;
+        router.push(url + '/chat');
     }
 
     return {
+        isOutbox,
         columns,
-        selectRow: handleRowSelect,
         deleteMessage: handleDeleteMessage,
+        selectRow: handleRowSelect,
         isDeleting,
-        isOutBox,
         messages,
         loadMore,
         loadingMore,
-        hasMore: !!cursorRef.current,
+        hasMore: !!cursorRef.current
     }
 }

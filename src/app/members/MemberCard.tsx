@@ -21,9 +21,14 @@ const MemberCard = ({member, likeIds}: Props) => {
     }
 
     return (
-        <Card fullWidth className="relative z-50" as={Link} href={`/members/${member.id}`} isPressable>
-            <Image src={transformImageUrl(member.image) || '/images/user.png'} alt={member.name} isZoomed width={300}
-                   className="aspect-square object-cover"/>
+        <Card fullWidth className="relative z-50" as={Link} href={`/members/${member.userId}`} isPressable>
+            <Image
+                src={transformImageUrl(member.image) ?? '/images/user.png'}
+                alt={member.name ?? 'user profile photo'}
+                isZoomed
+                width={300}
+                className="aspect-square object-cover"
+            />
             <div onClick={preventLinkAction}>
                 <div className="absolute top-3 right-3 z-50">
                     <LikeButton targetId={member.userId} hasLiked={hasLiked}/>

@@ -1,43 +1,35 @@
 import {ZodIssue} from 'zod';
 
-type ActionResult<T> = { status: 'success'; data: T } | { status: 'error'; error: string | ZodIssue[] };
+type ActionResult<T> =
+    { status: 'success', data: T } | { status: 'error', error: string | ZodIssue[] }
 
 type MessageWithSenderRecipient = Prisma.MessageGetPayload<{
     select: {
-        id: true;
-        text: true;
-        created: true;
-        dateRead: true;
+        id: true,
+        text: true,
+        created: true,
+        dateRead: true,
         sender: {
-            select: { userId; name; image };
-        };
+            select: { userId, name, image }
+        },
         recipient: {
-            select: { userId; name; image };
-        };
-    };
-}>;
+            select: { userId, name, image }
+        }
+    }
+}>
 
 type MessageDto = {
-    id: string;
-    text: string;
-    created: string;
-    dateRead: string | null;
-
-    senderId: string;
-    senderName: string;
-    senderImage: string | null;
-    senderMemberId: string;
-
-    recipientId: string;
-    recipientName: string;
-    recipientImage: string | null;
-    recipientMemberId: string;
-
-    otherUserId: string;
-    otherUserName?: string;
-    otherUserImage?: string | null;
-    otherMemberId: string;
-};
+    id: string
+    text: string
+    created: string
+    dateRead: string | null
+    senderId?: string
+    senderName?: string
+    senderImage?: string | null
+    recipientId?: string
+    recipientName?: string
+    recipientImage?: string | null
+}
 
 type UserFilters = {
     ageRange: number[];
@@ -49,23 +41,23 @@ type UserFilters = {
 type PagingParams = {
     pageNumber: number;
     pageSize: number;
-};
+}
 
 type PagingResult = {
     totalPages: number;
     totalCount: number;
-} & PagingParams;
+} & PagingParams
 
 type PaginatedResponse<T> = {
     items: T[];
     totalCount: number;
-};
+}
 
-type GetMembersParams = {
+type GetMemberParams = {
+    ageRange?: string;
+    gender?: string;
     pageNumber?: string;
     pageSize?: string;
     orderBy?: string;
-    gender?: string;
-    ageRange?: string;
     withPhoto?: string;
-};
+}
