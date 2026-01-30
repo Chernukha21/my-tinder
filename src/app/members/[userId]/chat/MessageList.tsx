@@ -56,7 +56,7 @@ const MessageList = ({initialMessages, currentUserId, chatId}: Props) => {
             {messages && messages.length === 0 ? (
                 "No messages to display"
             ) : (
-                <div>
+                <div className="pb-24">
                     {messages && messages.map((message) => (
                         <MessageBox
                             key={message.id}

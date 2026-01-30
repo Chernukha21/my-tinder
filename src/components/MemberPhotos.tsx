@@ -48,7 +48,7 @@ const MemberPhotos = ({photos, editing, mainImageUrl}: Props) => {
     }
 
     return (
-        <div className="grid grid-cols-5 gap-3 p-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3 p-5">
             {photos && photos.map((photo) => (
                 <div key={photo.id} className="relative">
                     <MemberImage photo={photo}/>

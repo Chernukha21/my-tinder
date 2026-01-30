@@ -53,7 +53,7 @@ type PaginatedResponse<T> = {
     totalCount: number;
 }
 
-type GetMemberParams = {
+type GetMembersParams = {
     ageRange?: string;
     gender?: string;
     pageNumber?: string;

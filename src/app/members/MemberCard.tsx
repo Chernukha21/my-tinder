@@ -8,9 +8,9 @@ import LikeButton from "@/components/LikeButton";
 import PresenceDot from "@/components/PresenceDot";
 
 type Props = {
-    member: Member
-    likeIds: string[]
-}
+    member: Member;
+    likeIds: string[];
+};
 
 const MemberCard = ({member, likeIds}: Props) => {
     const hasLiked = likeIds.includes(member.userId);
@@ -21,14 +21,19 @@ const MemberCard = ({member, likeIds}: Props) => {
     }
 
     return (
-        <Card fullWidth className="relative z-50" as={Link} href={`/members/${member.userId}`} isPressable>
+        <Card
+            as={Link}
+            href={`/members/${member.userId}`}
+            isPressable
+            className="relative h-[300px] w-full"
+        >
             <Image
-                src={transformImageUrl(member.image) ?? '/images/user.png'}
-                alt={member.name ?? 'user profile photo'}
-                isZoomed
-                width={300}
-                className="aspect-square object-cover"
+                removeWrapper
+                src={transformImageUrl(member.image) ?? "/images/user.png"}
+                alt={member.name ?? "user profile photo"}
+                className="z-0 w-full h-full object-cover"
             />
+
             <div onClick={preventLinkAction}>
                 <div className="absolute top-3 right-3 z-50">
                     <LikeButton targetId={member.userId} hasLiked={hasLiked}/>
@@ -37,9 +42,12 @@ const MemberCard = ({member, likeIds}: Props) => {
                     <PresenceDot member={member}/>
                 </div>
             </div>
-            <CardFooter className="flex justify-start bg-black overflow-hidden absolute bottom-0 z-10 bg-dark-gradient">
+
+            <CardFooter className="flex justify-start overflow-hidden absolute bottom-0 z-10 bg-dark-gradient">
                 <div className="flex flex-col text-white">
-                    <span className="font-semibold">{member.name}, {calculateAge(member.dateOfBirth)}</span>
+                    <span className="font-semibold">
+                      {member.name}, {calculateAge(member.dateOfBirth)}
+                    </span>
                     <span className="text-sm">{member.city}</span>
                 </div>
             </CardFooter>

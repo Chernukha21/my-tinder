@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {AiFillStar, AiOutlineStar} from "react-icons/ai";
 import {PiSpinnerGap} from "react-icons/pi";
 
@@ -8,6 +8,11 @@ type Props = {
 }
 
 const StarButton = ({selected, loading}: Props) => {
+    useEffect(() => {
+      const onScroll = () => console.log("window.scrollY =", window.scrollY);
+      window.addEventListener("scroll", onScroll, { passive: true });
+      return () => window.removeEventListener("scroll", onScroll);
+    }, []);
     return (
         <div className="relative hover:opacity-80 transition cursor-pointer">
             {!loading ? (

@@ -1,6 +1,7 @@
 import React from 'react';
-import {CardBody, CardHeader, Divider, Image} from "@heroui/react";
+import {CardBody, CardHeader, Divider} from "@heroui/react";
 import {getMembersPhotosByUserId} from "@/app/actions/memberActions";
+import MemberPhotos from "@/components/MemberPhotos";
 
 const PhotosPage = async ({params}: { params: Promise<{ userId: string }> }) => {
     const {userId} = await params;
@@ -13,15 +14,8 @@ const PhotosPage = async ({params}: { params: Promise<{ userId: string }> }) => 
                 Photos
             </CardHeader>
             <Divider/>
-            <CardBody className="grid grid-cols-5 gap-3">
-                {membersPhotos && membersPhotos
-                    .map(photo =>
-                        <Image key={photo.url}
-                               src={photo.url}
-                               width={300}
-                               alt="Member`s photo"
-                               className="object-cover aspect-square"
-                        />)}
+            <CardBody>
+                <MemberPhotos photos={membersPhotos}/>
             </CardBody>
         </>
     );

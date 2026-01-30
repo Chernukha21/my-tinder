@@ -4,7 +4,7 @@ import {MdOutlineMailOutline} from "react-icons/md";
 import LoadingComponent from "@/components/LoadingComponent";
 import ResultMessage from "@/components/ResultMessage";
 
-const Page = async ({searchParams}: { searchParams: Promise<{ token: string }> }) => {
+const VerifyEmailPage = async ({searchParams}: { searchParams: Promise<{ token: string }> }) => {
     const {token} = await searchParams;
     const result = await verifyEmail(token);
 
@@ -27,4 +27,4 @@ const Page = async ({searchParams}: { searchParams: Promise<{ token: string }> }
     );
 };
 
-export default Page;
+export default VerifyEmailPage;

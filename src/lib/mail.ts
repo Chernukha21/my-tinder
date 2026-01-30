@@ -1,9 +1,10 @@
 import {Resend} from "resend";
 
 const resend = new Resend(process.env.NEXT_RESEND_API_KEY);
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 export async function sendVerificationEmail(email: string, token: string) {
-    const link = `http://localhost:3000/verify-email?token=${token}`;
+    const link = `${baseUrl}/verify-email?token=${token}`;
     const {data, error} = await resend.emails.send({
         from: "Acme <onboarding@resend.dev>",
         to: "chorniy2008@ukr.net",

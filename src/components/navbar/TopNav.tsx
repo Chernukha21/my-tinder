@@ -25,20 +25,29 @@ const TopNav = async () => {
     const links = session?.user.role === 'ADMIN' ? adminLinks : memberLinks;
     return (
         <>
-            <Navbar maxWidth="xl" className="bg-gradient-to-r from-blue-500 to-purple-500" classNames={{
-                item: [
-                    "text-xl", "text-white", "uppercase", 'data-[active="true"]:text-yellow-200'
-                ]
-            }}>
+          <Navbar
+            className="sticky top-0 z-50 bg-gradient-to-r from-blue-500 to-purple-500 backdrop-blur-md shadow-md"
+            classNames={{
+              wrapper: "w-full !px-4 lg:!px-6",
+              item: [
+                "text-sm",
+                "sm:text-base",
+                "md:text-xl",
+                "text-white",
+                "uppercase",
+                'data-[active="true"]:text-yellow-200',
+              ],
+            }}
+          >
                 <NavbarBrand as={Link} href="/">
-                    <GiMatchTip size={40} className="text-gray-200"/>
-                    <div className="font-bold text-3xl flex">
+                    <GiMatchTip size={50} className="text-gray-200"/>
+                    <div className="hidden md:flex font-bold text-3xl">
                         <span className="text-gray-900">My</span>
                         <span className="text-gray-200">Tinder</span>
                     </div>
                 </NavbarBrand>
                 <NavbarContent justify="center">
-                    {links.map(link => <NavLink href={link.href} label={link.label} key={link.href}/>)}
+                    {session && links.map(link => <NavLink href={link.href} label={link.label} key={link.href}/>)}
                 </NavbarContent>
                 <NavbarContent justify="end">
                     {userInfo ? (<UserMenu userInfo={userInfo}/>) :

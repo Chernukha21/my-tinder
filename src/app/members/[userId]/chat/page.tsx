@@ -6,6 +6,7 @@ import {getMemberByUserId} from "@/app/actions/memberActions";
 import MessageList from "@/app/members/[userId]/chat/MessageList";
 import {createChatId} from "@/lib/util";
 import {notFound} from "next/navigation";
+import ChatHeaderClient from '@/components/ChatHeaderClient';
 
 export default async function ChatPage({params}: { params: Promise<{ userId: string }> }) {
     const currentUserId = await getAuthUserId();
@@ -13,7 +14,6 @@ export default async function ChatPage({params}: { params: Promise<{ userId: str
     const member = await getMemberByUserId(userId);
     if (!member) return notFound();
     const messagesResult = await getMessageThread(member.userId);
-
     const chatId = createChatId(currentUserId, userId);
 
     if (!member) {
@@ -30,7 +30,10 @@ export default async function ChatPage({params}: { params: Promise<{ userId: str
 
     return (
         <CardInnerWrapper
-            header="Chat"
+            header={<ChatHeaderClient user={{
+              userId: member.userId,
+              name: member.name,
+            }}/>}
             body={<MessageList initialMessages={messagesResult} chatId={chatId}
                                currentUserId={currentUserId}/>}
             footer={<ChatForm/>}

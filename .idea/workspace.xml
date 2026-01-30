@@ -5,49 +5,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="addeece1-29ae-4fb1-b54b-eb2f95a8bf3e" name="Changes" comment="&quot;Added some changes to 8 chapter&quot;">
-      <change afterPath="$PROJECT_DIR$/src/app/actions/adminActions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/actions/messageActions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/admin/moderation/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ClientSession.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/useRole.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/members/[userId]/MemberDetailsShell.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/messages/MessagesContainerSwitch.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AppModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ChatHeaderClient.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ResponsiveImage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SidebarTopButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SwipeRowButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navbar/FiltersContent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/svg/LoversIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/seed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/seed.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/actions/authActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/authActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/actions/memberActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/memberActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/actions/messageActions.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/actions/userActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/userActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/beautiful-sunny.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/sunset1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/verify-email/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/verify-email/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/admin/moderation/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/moderation/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/sign-image/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/sign-image/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lists/ListTab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lists/ListTab.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/members/MemberCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/MemberCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/MemberSideBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/MemberSideBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/chat/MessageBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/[userId]/chat/MessageBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/chat/MessageList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/[userId]/chat/MessageList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/chat/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/[userId]/chat/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/[userId]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/[userId]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/photos/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/[userId]/photos/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/edit/photos/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/edit/photos/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/messages/MessageTableCell.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/messages/MessageTableCell.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/messages/MessagesTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/messages/MessagesTable.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/messages/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/messages/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MemberImage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MemberImage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MemberPhotos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MemberPhotos.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NotificationToast.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NotificationToast.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Providers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NewMessageToast.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewMessageToast.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PaginationComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PaginationComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StarButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StarButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/Filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Filters.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/navbar/TopNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/TopNav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/mappings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/mappings.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/useMessages.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/useMessages.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/useNotificationChannel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/useNotificationChannel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/cloudinary.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/cloudinary.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/mail.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/mail.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/tokens.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/tokens.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/util.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/next-auth.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/next-auth.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="156" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
   <component name="FormatOnSaveOptions">
     <option name="mySelectedFileTypes">
       <set>
         <option value="HTML" />
         <option value="JSX" />
+        <option value="JavaScript" />
         <option value="Prisma" />
         <option value="TypeScript" />
         <option value="TypeScript JSX" />
@@ -69,10 +89,17 @@
     &quot;accountId&quot;: &quot;82f2bde4-2598-4362-971e-5f32631bdc57&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/components/AppModal.tsx" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -86,13 +113,22 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;JavaScript Debug.localhost:3000.executor&quot;: &quot;Debug&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;23.11.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;25.1.0&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
     &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
     &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
@@ -106,22 +142,29 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\Study\\LearnNext\\my-own-tinder\\node_modules\\prettier&quot;,
     &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\Study\\LearnNext\\my-own-tinder\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecapSpentCounter">
+    <option name="endsOfQuotaMs" value="1769860845003" />
+    <option name="spentUsd" value="0.09816485" />
+  </component>
+  <component name="RecapUselessUpdatesCounter">
+    <option name="suspendCountdown" value="0" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Study\LearnNext\my-own-tinder\src\app\members\edit" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Study\LearnNext\my-own-tinder\src\app\members\[userId]" />
+      <recent name="D:\Study\LearnNext\my-own-tinder\src\app\members" />
       <recent name="D:\Study\LearnNext\my-own-tinder\src\app\(auth)" />
       <recent name="D:\Study\LearnNext\my-own-tinder\src\app" />
       <recent name="D:\Study\LearnNext\my-own-tinder\src\lib" />
-      <recent name="D:\Study\LearnNext\my-own-tinder\src\lib\util" />
-      <recent name="D:\Study\LearnNext\my-own-tinder\src\lib\schemas" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.localhost:3000">
@@ -150,7 +193,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.28293.44" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.29346.143" />
       </set>
     </attachedChunks>
   </component>
@@ -286,7 +329,45 @@
       <workItem from="1762939241226" duration="9000" />
       <workItem from="1763133914309" duration="3056000" />
       <workItem from="1763452354774" duration="3349000" />
-      <workItem from="1763468655841" duration="3288000" />
+      <workItem from="1763468655841" duration="4439000" />
+      <workItem from="1763481959540" duration="4367000" />
+      <workItem from="1763487303524" duration="692000" />
+      <workItem from="1763552105790" duration="1261000" />
+      <workItem from="1763557446028" duration="3102000" />
+      <workItem from="1763567057921" duration="7368000" />
+      <workItem from="1763654768316" duration="2114000" />
+      <workItem from="1763658412363" duration="850000" />
+      <workItem from="1763801419080" duration="9116000" />
+      <workItem from="1764078894883" duration="3010000" />
+      <workItem from="1764087463985" duration="4516000" />
+      <workItem from="1764167508881" duration="481000" />
+      <workItem from="1764174502733" duration="4683000" />
+      <workItem from="1764267449304" duration="2434000" />
+      <workItem from="1764272913065" duration="4000" />
+      <workItem from="1764688742476" duration="3735000" />
+      <workItem from="1764765670012" duration="128000" />
+      <workItem from="1764782419914" duration="3461000" />
+      <workItem from="1764835241011" duration="4862000" />
+      <workItem from="1764845423797" duration="589000" />
+      <workItem from="1764846031595" duration="30000" />
+      <workItem from="1764926556394" duration="73000" />
+      <workItem from="1764926689656" duration="7491000" />
+      <workItem from="1765303840037" duration="3625000" />
+      <workItem from="1765389694939" duration="4136000" />
+      <workItem from="1766130644352" duration="40000" />
+      <workItem from="1766130711421" duration="170000" />
+      <workItem from="1766130891097" duration="65000" />
+      <workItem from="1766139674764" duration="979000" />
+      <workItem from="1767875759742" duration="5000" />
+      <workItem from="1769169381214" duration="7253000" />
+      <workItem from="1769177102353" duration="7122000" />
+      <workItem from="1769268752789" duration="6938000" />
+      <workItem from="1769277923715" duration="380000" />
+      <workItem from="1769355296147" duration="5032000" />
+      <workItem from="1769419327368" duration="7177000" />
+      <workItem from="1769698598721" duration="6467000" />
+      <workItem from="1769707038361" duration="3770000" />
+      <workItem from="1769787113170" duration="4255000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Added some changes to 8 chapter&quot;">
       <option name="closed" value="true" />

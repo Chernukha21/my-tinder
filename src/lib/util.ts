@@ -14,6 +14,7 @@ export function timeAgo(date: string) {
     return formatDistance(new Date(date), new Date()) + ' ago';
 }
 
+
 export function handleServerErrors<TFieldValues extends FieldValues>(errorResponse: {
     error: string | ZodIssue[]
 }, setError: UseFormSetError<TFieldValues>) {
@@ -51,4 +52,20 @@ export function truncateString(text?: string | null, num = 50) {
 
 export function createChatId(a: string, b: string) {
     return a > b ? `${b}-${a}` : `${a}-${b}`;
+}
+
+export function getPageScrollTop (){
+  return Math.max(
+  window.scrollY || 0,
+  document.documentElement.scrollTop || 0,
+  document.body.scrollTop || 0
+);}
+
+
+export function scrollPageToTop ()  {
+  const opts: ScrollToOptions = { top: 0, behavior: "smooth" };
+  window.scrollTo(opts);
+  document.documentElement.scrollTo(opts);
+  document.body.scrollTo(opts);
+
 }
