@@ -5,53 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="addeece1-29ae-4fb1-b54b-eb2f95a8bf3e" name="Changes" comment="&quot;Added some changes to 8 chapter&quot;">
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/members/[userId]/MemberDetailsShell.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/messages/MessagesContainerSwitch.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AppModal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ChatHeaderClient.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ResponsiveImage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SidebarTopButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SwipeRowButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/FiltersContent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/svg/LoversIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/beautiful-sunny.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/sunset1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(auth)/verify-email/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/verify-email/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/admin/moderation/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/moderation/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/sign-image/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/sign-image/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lists/ListTab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lists/ListTab.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/MemberCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/MemberCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/MemberSideBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/MemberSideBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/chat/MessageBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/[userId]/chat/MessageBox.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/chat/MessageList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/[userId]/chat/MessageList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/chat/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/[userId]/chat/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/[userId]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/photos/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/[userId]/photos/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/members/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/messages/MessageTableCell.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/messages/MessageTableCell.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/messages/MessagesTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/messages/MessagesTable.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/messages/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/messages/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MemberImage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MemberImage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MemberPhotos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MemberPhotos.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewMessageToast.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewMessageToast.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PaginationComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PaginationComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StarButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StarButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/Filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Filters.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/TopNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/TopNav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/cloudinary.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/cloudinary.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/mail.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/mail.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/tokens.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/tokens.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/util.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="156" />
+    <option name="cachedIndexableFilesCount" value="158" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FormatOnSaveOptions">
@@ -86,7 +41,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Chernukha21/my-tinder.git&quot;,
-    &quot;accountId&quot;: &quot;82f2bde4-2598-4362-971e-5f32631bdc57&quot;
+    &quot;accountId&quot;: &quot;8347ef34-6f05-4639-bb50-94c881565199&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
@@ -367,7 +322,10 @@
       <workItem from="1769419327368" duration="7177000" />
       <workItem from="1769698598721" duration="6467000" />
       <workItem from="1769707038361" duration="3770000" />
-      <workItem from="1769787113170" duration="4255000" />
+      <workItem from="1769787113170" duration="4847000" />
+      <workItem from="1769935552980" duration="13000" />
+      <workItem from="1769936871423" duration="2000" />
+      <workItem from="1770114335171" duration="505000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Added some changes to 8 chapter&quot;">
       <option name="closed" value="true" />
