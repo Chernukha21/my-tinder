@@ -1,9 +1,9 @@
 import { ReactNode } from 'react';
-import {getMemberByUserId} from '@/app/actions/memberActions';
+import { getMemberByUserId } from '@/app/actions/memberActions';
 import { notFound } from 'next/navigation';
 import { Card } from '@heroui/card';
-import {getAuthUserId, getUserById} from '@/app/actions/authActions';
-import MemberSideBar from "@/app/members/MemberSideBar";
+import { getAuthUserId } from '@/app/actions/authActions';
+import MemberSideBar from '@/app/members/MemberSideBar';
 
 
 export default async function Layout({ children }: { children: ReactNode }) {
