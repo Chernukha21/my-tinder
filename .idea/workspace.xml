@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="addeece1-29ae-4fb1-b54b-eb2f95a8bf3e" name="Changes" comment="&quot;Added some changes to 8 chapter&quot;" />
+    <list default="true" id="addeece1-29ae-4fb1-b54b-eb2f95a8bf3e" name="Changes" comment="&quot;Added some changes to 8 chapter&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -322,7 +325,7 @@
       <workItem from="1769787113170" duration="4847000" />
       <workItem from="1769935552980" duration="13000" />
       <workItem from="1769936871423" duration="2000" />
-      <workItem from="1770114335171" duration="3313000" />
+      <workItem from="1770114335171" duration="3839000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Added some changes to 8 chapter&quot;">
       <option name="closed" value="true" />
