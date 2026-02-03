@@ -5,7 +5,6 @@ import LoversIcon from "@/components/svg/LoversIcon";
 
 export default async function Home() {
     const session = await auth();
-
     return (
         <div className="flex flex-col items-center justify-center gap-6 px-4 text-secondary">
             <LoversIcon className="w-48 h-48 fill-secondary "/>

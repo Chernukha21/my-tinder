@@ -111,15 +111,15 @@ export async function getMembersPhotosById(id: string) {
 }
 
 export async function updateLastActive() {
-    const userId = await getAuthUserId();
-    try {
-        return prisma.member.update({
-                where: {userId},
-                data: {updated: new Date()}
-            }
-        )
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
+  const userId = await getAuthUserId();
+  try {
+    await prisma.member.updateMany({
+      where: { userId },
+      data: { updated: new Date() },
+    });
+    return { status: "ok" as const };
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
 }
