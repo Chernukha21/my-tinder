@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="addeece1-29ae-4fb1-b54b-eb2f95a8bf3e" name="Changes" comment="&quot;Added some changes to 8 chapter&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/actions/memberActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/memberActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/actions/userActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/userActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/TopNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/TopNav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/MemberCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/MemberCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LikeButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LikeButton.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -331,7 +328,8 @@
       <workItem from="1769936871423" duration="2000" />
       <workItem from="1770114335171" duration="4119000" />
       <workItem from="1770119008297" duration="2145000" />
-      <workItem from="1770130743279" duration="2271000" />
+      <workItem from="1770130743279" duration="2606000" />
+      <workItem from="1770211953029" duration="2001000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Added some changes to 8 chapter&quot;">
       <option name="closed" value="true" />
