@@ -6,9 +6,9 @@ import { Card } from '@heroui/react';
 import MemberDetailsShell from '@/app/members/[userId]/MemberDetailsShell';
 
 const MemberDetailsLayout = async ({
-                                     children,
-                                     params,
-                                   }: {
+  children,
+  params,
+}: {
   children: ReactNode;
   params: Promise<{ userId: string }>;
 }) => {
@@ -26,7 +26,7 @@ const MemberDetailsLayout = async ({
 
   return (
     <MemberDetailsShell sidebar={<MemberSideBar member={member} navLinks={navLinks} />}>
-      <Card className="w-full h-full">{children}</Card>
+      <Card className="h-full w-full">{children}</Card>
     </MemberDetailsShell>
   );
 };

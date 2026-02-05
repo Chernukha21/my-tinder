@@ -1,8 +1,8 @@
 'use client';
 import clsx from 'clsx';
-import {transformImageUrl} from '@/lib/util';
-import {MessageDto} from '@/types';
-import {useEffect, useRef} from 'react';
+import { transformImageUrl } from '@/lib/util';
+import { MessageDto } from '@/types';
+import { useEffect, useRef } from 'react';
 import PresenceAvatar from '@/components/PresenceAvatar';
 
 type Props = {
@@ -29,16 +29,16 @@ export default function MessageBox({ message, currentUserId }: Props) {
   );
 
   const messageContentClasses = clsx(
-    "flex flex-col w-fit px-3 py-2",
-    "min-w-[12rem] max-w-[75%] sm:max-w-[60%]",
+    'flex flex-col w-fit px-3 py-2',
+    'min-w-[12rem] max-w-[75%] sm:max-w-[60%]',
     {
-      "bg-blue-100 text-gray-900 rounded-2xl rounded-br-md ml-auto": isCurrentUserSender,
-      "bg-green-100 text-gray-900 rounded-2xl rounded-bl-md mr-auto": !isCurrentUserSender,
-    }
+      'bg-blue-100 text-gray-900 rounded-2xl rounded-br-md ml-auto': isCurrentUserSender,
+      'bg-green-100 text-gray-900 rounded-2xl rounded-bl-md mr-auto': !isCurrentUserSender,
+    },
   );
 
   const renderMessageHeader = () => (
-    <div className={clsx("flex", isCurrentUserSender ? "justify-end" : "justify-start")}>
+    <div className={clsx('flex', isCurrentUserSender ? 'justify-end' : 'justify-start')}>
       <span className="text-sm font-semibold">{message.senderName}</span>
     </div>
   );
@@ -47,13 +47,13 @@ export default function MessageBox({ message, currentUserId }: Props) {
     return (
       <div className={messageContentClasses}>
         {renderMessageHeader()}
-        <p className="text-sm text-gray-900 break-words p-2 rounded-2xl ">{message.text}</p>
-          {isCurrentUserSender && (
-              <div className="flex items-center justify-end gap-1 text-[10px] text-gray-500">
-                  <span>{message.created}</span>
-                  <span>{isRead ? '✓✓' : '✓'}</span>
-              </div>
-          )}
+        <p className="break-words rounded-2xl p-2 text-sm text-gray-900">{message.text}</p>
+        {isCurrentUserSender && (
+          <div className="flex items-center justify-end gap-1 text-[10px] text-gray-500">
+            <span>{message.created}</span>
+            <span>{isRead ? '✓✓' : '✓'}</span>
+          </div>
+        )}
       </div>
     );
   };
@@ -61,7 +61,7 @@ export default function MessageBox({ message, currentUserId }: Props) {
   return (
     <div className="grid grid-rows-1">
       <div
-        className={clsx('flex gap-2 mb-3', {
+        className={clsx('mb-3 flex gap-2', {
           'justify-end text-right': isCurrentUserSender,
           'justify-start': !isCurrentUserSender,
         })}

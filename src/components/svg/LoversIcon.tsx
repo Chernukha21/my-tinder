@@ -1,13 +1,20 @@
 import React from 'react';
 
-const LoversIcon = ({className}: { className: string }) => {
-    return (
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-             width="994.000000pt" height="1280.000000pt" viewBox="0 0 994.000000 1280.000000"
-             preserveAspectRatio="xMidYMid meet" fill="currentColor" className={className}>
-            <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
-               stroke="none">
-                <path d="M2526 12793 c-4 -4 -35 -10 -69 -14 -64 -6 -103 -18 -172 -50 -22
+const LoversIcon = ({ className }: { className: string }) => {
+  return (
+    <svg
+      version="1.0"
+      xmlns="http://www.w3.org/2000/svg"
+      width="994.000000pt"
+      height="1280.000000pt"
+      viewBox="0 0 994.000000 1280.000000"
+      preserveAspectRatio="xMidYMid meet"
+      fill="currentColor"
+      className={className}
+    >
+      <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" stroke="none">
+        <path
+          d="M2526 12793 c-4 -4 -35 -10 -69 -14 -64 -6 -103 -18 -172 -50 -22
 -10 -65 -27 -96 -39 -36 -13 -75 -38 -108 -70 -29 -28 -56 -50 -61 -50 -5 0
 -13 -12 -16 -26 -4 -14 -17 -29 -29 -34 -13 -5 -35 -34 -54 -72 -18 -34 -38
 -70 -46 -78 -48 -56 -71 -174 -68 -352 1 -70 9 -160 18 -200 8 -40 15 -87 15
@@ -147,10 +154,11 @@ c28 23 29 26 17 57 -66 168 -143 434 -232 798 -13 52 -36 133 -52 179 -15 47
 87 -26z m-179 -123 c12 -48 11 -55 -4 -72 -9 -11 -21 -19 -25 -19 -10 0 -23
 125 -14 140 13 22 29 3 43 -49z m-4713 22 c29 -30 75 -113 75 -136 0 -14 -49
 -24 -145 -30 l-30 -2 2 83 c1 46 4 90 7 98 9 24 61 17 91 -13z m9123 -750 c-4
--22 -58 -31 -58 -10 0 20 10 27 37 27 18 0 24 -5 21 -17z"/>
-            </g>
-        </svg>
-    );
+-22 -58 -31 -58 -10 0 20 10 27 37 27 18 0 24 -5 21 -17z"
+        />
+      </g>
+    </svg>
+  );
 };
 
 export default LoversIcon;

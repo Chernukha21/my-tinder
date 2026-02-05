@@ -17,12 +17,12 @@ const aspectMap: Record<Aspect, string> = {
 };
 
 export default function ResponsiveImage({
-                                          src,
-                                          alt,
-                                          className = '',
-                                          imgClassName = '',
-                                          aspect = '4/3',
-                                        }: ResponsiveImageType) {
+  src,
+  alt,
+  className = '',
+  imgClassName = '',
+  aspect = '4/3',
+}: ResponsiveImageType) {
   const aspectClass = aspectMap[aspect];
 
   return (

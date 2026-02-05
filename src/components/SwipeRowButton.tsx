@@ -1,5 +1,5 @@
-"use client";
-import React, { useEffect, useRef, useState } from "react";
+'use client';
+import React, { useEffect, useRef, useState } from 'react';
 
 type SwipeRowProps = {
   id: string;
@@ -16,19 +16,19 @@ const MAX_LEFT = -ACTION_WIDTH;
 const OPEN_THRESHOLD = 36;
 
 export function SwipeRowButton({
-                           id,
-                           openId,
-                           setOpenId,
-                           children,
-                           onOpen,
-                           onDelete,
-                           disabled,
-                         }: SwipeRowProps) {
+  id,
+  openId,
+  setOpenId,
+  children,
+  onOpen,
+  onDelete,
+  disabled,
+}: SwipeRowProps) {
   const isOpen = openId === id;
 
   const startX = useRef(0);
   const startY = useRef(0);
-  const axis = useRef<null | "x" | "y">(null);
+  const axis = useRef<null | 'x' | 'y'>(null);
 
   const [offset, setOffset] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
@@ -56,10 +56,10 @@ export function SwipeRowButton({
     const dy = e.clientY - startY.current;
 
     if (!axis.current) {
-      if (Math.abs(dx) > 8) axis.current = "x";
-      else if (Math.abs(dy) > 8) axis.current = "y";
+      if (Math.abs(dx) > 8) axis.current = 'x';
+      else if (Math.abs(dy) > 8) axis.current = 'y';
     }
-    if (axis.current !== "x") return;
+    if (axis.current !== 'x') return;
 
     const base = isOpen ? MAX_LEFT : 0;
     setOffset(clamp(base + dx));
@@ -74,7 +74,6 @@ export function SwipeRowButton({
   };
 
   const onClickRow = () => {
-
     if (isOpen) {
       setOpenId(null);
       return;
@@ -86,7 +85,7 @@ export function SwipeRowButton({
     <div className="relative overflow-hidden rounded-xl">
       <button
         type="button"
-        className="absolute right-0 top-0 h-full w-[88px] bg-danger text-white text-sm font-medium flex items-center justify-center"
+        className="absolute right-0 top-0 flex h-full w-[88px] items-center justify-center bg-danger text-sm font-medium text-white"
         onClick={(e) => {
           e.stopPropagation();
           onDelete();
@@ -97,8 +96,8 @@ export function SwipeRowButton({
       </button>
 
       <div
-        style={{ transform: `translateX(${offset}px)`, touchAction: "pan-y" }}
-        className={`relative bg-background ${isDragging ? "" : "transition-transform duration-200"}`}
+        style={{ transform: `translateX(${offset}px)`, touchAction: 'pan-y' }}
+        className={`relative bg-background ${isDragging ? '' : 'transition-transform duration-200'}`}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={finish}

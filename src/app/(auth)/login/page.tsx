@@ -1,9 +1,9 @@
 import LoginForm from './LoginForm';
 
 export default function LoginPage() {
-    return (
-        <div className='flex items-center justify-center vertical-center'>
-            <LoginForm />
-        </div>
-    );
+  return (
+    <div className="vertical-center flex items-center justify-center">
+      <LoginForm />
+    </div>
+  );
 }

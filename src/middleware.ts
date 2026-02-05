@@ -1,9 +1,9 @@
-import {auth} from '@/auth';
-import {authRoutes, publicRoutes} from '@/routes';
-import {NextResponse} from 'next/server';
+import { auth } from '@/auth';
+import { authRoutes, publicRoutes } from '@/routes';
+import { NextResponse } from 'next/server';
 
 export default auth((req) => {
-  const {nextUrl} = req;
+  const { nextUrl } = req;
   const isLoggedIn = !!req.auth;
 
   const isPublic = publicRoutes.includes(nextUrl.pathname);
@@ -39,5 +39,5 @@ export default auth((req) => {
 });
 
 export const config = {
-  matcher: ['/((?!api|_next/static|_next/image|images|favicon.ico|sitemap.xml|robots.txt).*)']
-}
+  matcher: ['/((?!api|_next/static|_next/image|images|favicon.ico|sitemap.xml|robots.txt).*)'],
+};

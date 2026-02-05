@@ -1,5 +1,4 @@
 {
-
   "singleQuote": true,
   "semi": true,
   "trailingComma": "all",
@@ -8,13 +7,9 @@
   "bracketSpacing": true,
   "arrowParens": "always",
 
-
   "jsxSingleQuote": false,
   "bracketSameLine": false,
 
-
   "plugins": ["prettier-plugin-tailwindcss"],
-
-
-  "tailwindConfig": ",./tailwind.config.ts"
+  "tailwindConfig": "./tailwind.config.cjs"
 }

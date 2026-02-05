@@ -1,10 +1,8 @@
 import React from 'react';
-import CompleteProfileForm from "@/app/(auth)/complete-profile/CompleteProfileForm";
+import CompleteProfileForm from '@/app/(auth)/complete-profile/CompleteProfileForm';
 
 const CompleteProfilePage = () => {
-    return (
-        <CompleteProfileForm/>
-    );
+  return <CompleteProfileForm />;
 };
 
 export default CompleteProfilePage;

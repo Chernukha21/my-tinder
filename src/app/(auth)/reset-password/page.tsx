@@ -1,9 +1,7 @@
-import ResetPasswordForm from "@/app/(auth)/reset-password/ResetPasswordForm";
+import ResetPasswordForm from '@/app/(auth)/reset-password/ResetPasswordForm';
 
 const ResetPasswordPage = () => {
-    return (
-        <ResetPasswordForm/>
-    );
+  return <ResetPasswordForm />;
 };
 
 export default ResetPasswordPage;

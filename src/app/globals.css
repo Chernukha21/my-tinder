@@ -3,17 +3,16 @@
 @tailwind utilities;
 
 @layer components {
-    .vertical-center {
-        height: calc(100vh - 64px);
-    }
-    .page-size-box {
-        @apply cursor-pointer border-2 hover:bg-gray-100 flex items-center
-        justify-center rounded-lg shadow-sm min-w-[36px] w-9 h-9
-        text-sm;
-    }
+  .vertical-center {
+    height: calc(100vh - 64px);
+  }
+  .page-size-box {
+    @apply flex h-9 w-9 min-w-[36px] cursor-pointer items-center justify-center rounded-lg border-2 text-sm shadow-sm hover:bg-gray-100;
+  }
 }
 
-html, body {
-    height: 100%;
-    overflow: auto;
+html,
+body {
+  height: 100%;
+  overflow: auto;
 }

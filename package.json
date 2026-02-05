@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build:css": "ts-node ./tailwind.config.ts",
+    "build:css": "ts-node tailwind.config.cjs",
     "vercel-build": "prisma generate && prisma migrate deploy && prisma db seed && next build"
   },
   "dependencies": {

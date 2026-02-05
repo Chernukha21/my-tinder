@@ -16,14 +16,14 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
   const profileComplete = session?.user.profileComplete as boolean;
   return (
     <html suppressHydrationWarning lang="en">
-    <body suppressHydrationWarning>
-    <Providers userId={userId} profileComplete={profileComplete}>
-      <TopNav />
-      <main className="w-full max-w-screen-xl mx-auto pt-6 px-4 sm:pt-10 lg:px-8">
-        {children}
-      </main>
-    </Providers>
-    </body>
+      <body suppressHydrationWarning>
+        <Providers userId={userId} profileComplete={profileComplete}>
+          <TopNav />
+          <main className="mx-auto w-full max-w-screen-xl px-4 pt-6 sm:pt-10 lg:px-8">
+            {children}
+          </main>
+        </Providers>
+      </body>
     </html>
   );
 }
