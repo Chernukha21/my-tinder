@@ -7,6 +7,7 @@ import { auth } from '@/auth';
 import UserMenu from './UserMenu';
 import { getUserInfoForNav } from '@/app/actions/userActions';
 import FiltersWrapper from './FiltersWrapper';
+import SwitchButton from '@/components/SwitchButton';
 
 export default async function TopNav() {
   const session = await auth();
@@ -29,7 +30,7 @@ export default async function TopNav() {
         maxWidth={'full'}
         className="w-full overflow-x-hidden bg-gradient-to-r from-purple-400 to-purple-700"
         classNames={{
-          wrapper: 'px-3 sm:px-6',
+          wrapper: 'px-1 sm:px-2',
           item: [
             'text-sm sm:text-xl',
             'text-white',
@@ -49,6 +50,7 @@ export default async function TopNav() {
           {session &&
             links.map((item) => <NavLink key={item.href} href={item.href} label={item.label} />)}
         </NavbarContent>
+        <SwitchButton />
         <NavbarContent justify="end">
           {isLoggedIn ? (
             <UserMenu

@@ -11,6 +11,8 @@ import useMessageStore from '@/store/useMessageStore';
 import { useShallow } from 'zustand/shallow';
 import { getUnreadMessageCount } from '@/app/actions/messageActions';
 
+import { ThemeProvider as NextThemesProvider } from 'next-themes';
+
 export default function Providers({
   children,
   userId,
@@ -40,12 +42,20 @@ export default function Providers({
 
   usePresenceChannel(userId, profileComplete);
   useNotificationChannel(userId, profileComplete);
+
   return (
-    <SessionProvider>
-      <HeroUIProvider>
-        <ToastContainer position="top-right" className="z-50" />
-        {children}
-      </HeroUIProvider>
-    </SessionProvider>
+    <NextThemesProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem
+      disableTransitionOnChange
+    >
+      <SessionProvider>
+        <HeroUIProvider>
+          <ToastContainer position="top-right" className="z-50" />
+          {children}
+        </HeroUIProvider>
+      </SessionProvider>
+    </NextThemesProvider>
   );
 }
