@@ -1,11 +1,12 @@
 'use client';
+
 import { usePathname } from 'next/navigation';
+import { useLocale } from 'next-intl';
 import Filters from '@/components/navbar/Filters';
 
-const FiltersWrapper = () => {
-  const pathName = usePathname();
-  if (pathName === '/members') return <Filters />;
-  else return null;
-};
+export default function FiltersWrapper() {
+  const pathname = usePathname();
+  const locale = useLocale();
 
-export default FiltersWrapper;
+  return pathname === `/${locale}/members` ? <Filters /> : null;
+}

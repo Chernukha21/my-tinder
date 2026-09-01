@@ -1,0 +1,111 @@
+{
+  "Nav": {
+    "darkMode": "Темна тема",
+    "lightMode": "Світла тема",
+    "edit profile": "Редагувати Профіль",
+    "logout": "Вийти",
+    "members": "Метчі",
+    "lists": "Списки",
+    "messages": "Повідолення",
+    "login": "Увійти",
+    "register": "Зареєструватись",
+    "main page": "Продовжити",
+    "signed as": "Зареєстровано як "
+  },
+  "Member": {
+    "chat": "Чат",
+    "photos": "Фото",
+    "profile": "Профіль",
+    "go back": "Назад",
+    "pagination": "Кількість юзерів на сторінці",
+    "showingResults": "Показано {start}-{end} з {totalCount} результатів",
+    "prevButton": "Вперед",
+    "nextButton": "Назад"
+  },
+  "Lists": {
+    "source": "Подобається мені",
+    "target": "Подобаюсь я",
+    "mutual": "Взаємності"
+  },
+  "Messages": {
+    "chat with": "Чат з",
+    "inbox": "Вхідні",
+    "outbox": "Відправлені"
+  },
+  "MessagesTable": {
+    "sender": "Відправник",
+    "recipient": "Отримувач",
+    "text": "Повідомлення",
+    "date received": "Дата отримання",
+    "date of sending": "Дата відправлення",
+    "actions": "Дії",
+    "no messages": "Більше немає повідомлень",
+    "load more": "Завантажити ще",
+    "input placeholder": "Написати"
+  },
+  "Filters": {
+    "results": "Результати",
+    "gender": "Стать",
+    "age": "Віковий діапазон",
+    "withPhoto": "Є Фото",
+    "orderBy": "Сортувати по",
+    "lastUpdated": "недавня активність",
+    "newest": "нові юзери"
+  },
+  "EditProfile": {
+    "editProfile": "Редагувати Профіль",
+    "updatePhotos": "Додати фото",
+    "name": "Им'я",
+    "description": "Опис",
+    "city": "Місто",
+    "country": "Країна",
+    "updateFormButton": "Оновити профіль",
+    "photosPage": "Сторінка оновлення фото",
+    "uploadButton": "Завантажити фото",
+    "editNamePage": "Редагування сторінки {name}"
+  },
+  "Register": {
+    "register": "Регістрація",
+    "name": "Ім'я",
+    "email": "Пошта",
+    "password": "Пароль",
+    "gender": "Стать",
+    "male": "Чоловік",
+    "female": "Жінка",
+    "dateOfBirth": "День народження",
+    "description": "Про себе",
+    "city": "Місто",
+    "country": "Країна",
+    "continueButton": "Продовжити",
+    "registerButton": "Зареєструватись",
+    "stepButton": "Назад",
+    "welcomeTitle": "Вітаємо to NextMatch"
+  },
+  "Validation": {
+    "nameRequired": "Ім'я обов'якове",
+    "nameMin": "Ім'я повинно мати мінмум 3 букви",
+    "emailRequired": "Пошта обо'язкова",
+    "emailInvalid": "Неправильна пошта",
+    "passwordRequired": "Пароль обов'язковий",
+    "passwordMin": "Пароль має мати мінімум 6 символів",
+    "genderRequired": "Заповніть стать",
+    "descriptionRequired": "Опишіть себе",
+    "descriptionMin": "Поле має містити мінімум 3 букви",
+    "cityRequired": "Введіть назву міста",
+    "countryRequired": "Введіть назву країни",
+    "dateOfBirthRequired": "Дата народження обов'якова",
+    "dateOfBirthMinAge": "Вам має бути мінімум 18 років"
+  },
+  "Login": {
+    "login": "Увійти",
+    "welcome_again": "Раді знову вітати в NextMatch",
+    "email_placeholder": "Пошта",
+    "password_placeholder": "Пароль",
+    "submit": "Увійти",
+    "forgot_password_link": "Забули пароль?"
+  },
+  "Empty_modal": {
+    "modal_header": "Немає результатів за цими фільтрами",
+    "modal_body": "Виберіть щось інше"
+  }
+}

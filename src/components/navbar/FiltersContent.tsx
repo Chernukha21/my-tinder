@@ -3,6 +3,7 @@
 import { Button, Select, SelectItem, Slider, Switch } from '@heroui/react';
 import { Spinner } from '@heroui/spinner';
 import { useFilters } from '@/store/useFilters';
+import { useTranslations } from 'next-intl';
 
 type FiltersContentProps = {
   variant: 'desktop' | 'modal';
@@ -20,7 +21,7 @@ const FiltersContent = ({ variant }: FiltersContentProps) => {
     totalCount,
     selectWithPhoto,
   } = useFilters();
-
+  const translation = useTranslations('Filters');
   const resultsBlock = (
     <div
       className={
@@ -29,13 +30,13 @@ const FiltersContent = ({ variant }: FiltersContentProps) => {
           : 'text-base font-semibold text-secondary'
       }
     >
-      Results: {isPending ? <Spinner size="sm" color="secondary" /> : totalCount}
+      {translation('results')}: {isPending ? <Spinner size="sm" color="secondary" /> : totalCount}
     </div>
   );
 
   const genderBlock = (
     <>
-      <p className="text-sm font-medium text-gray-700">Gender</p>
+      <p className="text-sm font-medium text-gray-700">{translation('gender')}</p>
       <div className="flex gap-2">
         {genderList.map(({ icon: Icon, value }) => (
           <Button
@@ -57,7 +58,7 @@ const FiltersContent = ({ variant }: FiltersContentProps) => {
       <Slider
         aria-label="Age range for selection"
         color="secondary"
-        label="Age range"
+        label={`${translation('age')}`}
         size="sm"
         minValue={18}
         maxValue={100}
@@ -69,7 +70,7 @@ const FiltersContent = ({ variant }: FiltersContentProps) => {
 
   const withPhotoBlock = (
     <>
-      <p className="text-sm font-medium text-gray-700">With photo</p>
+      <p className="text-sm font-medium text-gray-700">{translation('withPhoto')}</p>
       <Switch
         color="secondary"
         size="sm"
@@ -81,7 +82,7 @@ const FiltersContent = ({ variant }: FiltersContentProps) => {
 
   const orderBlock = (
     <>
-      <p className="text-sm font-medium text-gray-700">Order by</p>
+      <p className="text-sm font-medium text-gray-700">{translation('orderBy')}</p>
       <Select
         size="sm"
         fullWidth

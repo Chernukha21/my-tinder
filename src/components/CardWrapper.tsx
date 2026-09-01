@@ -25,7 +25,7 @@ const CardWrapper = ({
 }: Props) => {
   return (
     <div className="vertical-center flex items-center justify-center">
-      <Card className="mx-auto w-[50%] p-5">
+      <Card className="mx-auto w-full p-5 md:w-[50%] lg:w-[50%]">
         <CardHeader className="flex flex-col items-center justify-center">
           <div className="flex flex-col items-center gap-2 text-secondary">
             <div className="flex flex-row items-center gap-3">

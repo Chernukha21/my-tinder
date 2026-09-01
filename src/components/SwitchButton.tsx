@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 import { Switch } from '@heroui/react';
 import type { ComponentPropsWithoutRef } from 'react';
+import { useTranslations } from 'next-intl';
 
 type IconProps = ComponentPropsWithoutRef<'svg'>;
 
@@ -28,13 +29,12 @@ export const SunIcon = (props: IconProps) => (
 export default function SwitchButton() {
   const { theme, setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-
+  const translation = useTranslations('Nav');
   useEffect(() => setMounted(true), []);
   if (!mounted) return <div style={{ width: 44, height: 32 }} />;
 
   const current = theme === 'system' ? resolvedTheme : theme;
   const isDark = current === 'dark';
-
   return (
     <Switch
       isSelected={isDark}
@@ -45,7 +45,7 @@ export default function SwitchButton() {
         isSelected ? <SunIcon className={className} /> : <MoonIcon className={className} />
       }
     >
-      {isDark ? 'Dark mode' : 'Light mode'}
+      {isDark ? translation('darkMode') : translation('lightMode')}
     </Switch>
   );
 }

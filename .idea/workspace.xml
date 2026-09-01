@@ -5,12 +5,79 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="addeece1-29ae-4fb1-b54b-eb2f95a8bf3e" name="Changes" comment="&quot;Added some changes to 8 chapter&quot;">
-      <change afterPath="$PROJECT_DIR$/src/components/SwitchButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LanguageSwitcher.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/navigation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/request.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/routing.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/translations/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/translations/uk.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Providers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/complete-profile/CompleteProfileForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/complete-profile/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/forgot-password/ForgotPasswordForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/forgot-password/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/login/LoginForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/login/SocialLogin.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/login/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/register/ProfileForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/register/RegisterForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/register/UserDetailsForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/register/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/register/success/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/reset-password/ResetPasswordForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/reset-password/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/verify-email/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/admin/moderation/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/error.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lists/ListTab.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lists/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loading.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/MemberCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/MemberSideBar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/MemberDetailsShell.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/chat/ChatForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/chat/MessageBox.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/chat/MessageList.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/chat/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/[userId]/photos/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/edit/EditForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/edit/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/edit/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/edit/photos/MemberPhotoUpload.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/edit/photos/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/loading.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/messages/MessageSideBar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/messages/MessageTableCell.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/messages/MessagesContainerSwitch.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/messages/MessagesTable.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/messages/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/session/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardWrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ChatHeaderClient.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChatHeaderClient.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EmptyState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EmptyState.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ImageUploadButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageUploadButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavLink.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NotificationToast.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NotificationToast.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PaginationComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PaginationComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SwitchButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SwitchButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/FiltersContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/FiltersContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/FiltersWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/FiltersWrapper.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/navbar/TopNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/TopNav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/UserMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/UserMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/useFilters.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/useFilters.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/useMessages.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/useMessages.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +85,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="159" />
+    <option name="cachedIndexableFilesCount" value="166" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FormatOnSaveOptions">
@@ -84,7 +151,7 @@
     &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/i18n&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;23.11.0&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;25.1.0&quot;,
     &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
@@ -101,7 +168,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\Study\\LearnNext\\my-own-tinder\\node_modules\\prettier&quot;,
     &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\Study\\LearnNext\\my-own-tinder\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -119,11 +186,11 @@
       <recent name="D:\Study\LearnNext\my-own-tinder\src\app\members\edit" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Study\LearnNext\my-own-tinder\src\app" />
+      <recent name="D:\Study\LearnNext\my-own-tinder\src\app\[locale]" />
       <recent name="D:\Study\LearnNext\my-own-tinder\src\app\members\[userId]" />
       <recent name="D:\Study\LearnNext\my-own-tinder\src\app\members" />
       <recent name="D:\Study\LearnNext\my-own-tinder\src\app\(auth)" />
-      <recent name="D:\Study\LearnNext\my-own-tinder\src\app" />
-      <recent name="D:\Study\LearnNext\my-own-tinder\src\lib" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.localhost:3000">
@@ -152,7 +219,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.30387.83" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.33813.27" />
       </set>
     </attachedChunks>
   </component>
@@ -338,7 +405,32 @@
       <workItem from="1770304581265" duration="82000" />
       <workItem from="1770304674119" duration="5698000" />
       <workItem from="1771693985512" duration="2000" />
-      <workItem from="1771746709750" duration="3184000" />
+      <workItem from="1771746709750" duration="4573000" />
+      <workItem from="1771760111853" duration="1672000" />
+      <workItem from="1771761978582" duration="17000" />
+      <workItem from="1771762034860" duration="11000" />
+      <workItem from="1771762067586" duration="1134000" />
+      <workItem from="1771763355947" duration="2479000" />
+      <workItem from="1771766193347" duration="407000" />
+      <workItem from="1771780565381" duration="722000" />
+      <workItem from="1771781305711" duration="424000" />
+      <workItem from="1771781743212" duration="1679000" />
+      <workItem from="1771843105960" duration="5446000" />
+      <workItem from="1772616657797" duration="4276000" />
+      <workItem from="1772630940974" duration="4972000" />
+      <workItem from="1772714600074" duration="4437000" />
+      <workItem from="1773398765182" duration="7126000" />
+      <workItem from="1773836229355" duration="3744000" />
+      <workItem from="1773846001875" duration="2460000" />
+      <workItem from="1773914382865" duration="3344000" />
+      <workItem from="1773924689449" duration="2578000" />
+      <workItem from="1774354937896" duration="598000" />
+      <workItem from="1775664720539" duration="100000" />
+      <workItem from="1775664907146" duration="7000" />
+      <workItem from="1775722954068" duration="163000" />
+      <workItem from="1775724476404" duration="8000" />
+      <workItem from="1776270545769" duration="7000" />
+      <workItem from="1788281827998" duration="2336000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Added some changes to 8 chapter&quot;">
       <option name="closed" value="true" />
@@ -353,6 +445,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="next.config.ts" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="OPEN_GENERIC_TABS">

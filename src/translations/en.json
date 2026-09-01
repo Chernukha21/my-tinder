@@ -1,0 +1,111 @@
+{
+  "Nav": {
+    "darkMode": "Dark mode",
+    "lightMode": "Light mode",
+    "edit profile": "Edit Profile",
+    "logout": "Logout",
+    "members": "Members",
+    "lists": "Lists",
+    "messages": "Messages",
+    "login": "Login",
+    "register": "Register",
+    "main page": "Continue",
+    "signed as": "Signed in as"
+  },
+  "Member": {
+    "chat": "Chat",
+    "photos": "Photos",
+    "profile": "Profile",
+    "go back": "Go back",
+    "pagination": "Number of members per page",
+    "showingResults": "Showing {start}-{end} of {totalCount} results",
+    "prevButton": "Prev",
+    "nextButton": "Next"
+  },
+  "Lists": {
+    "source": "Members I have liked",
+    "target": "Members that liked me",
+    "mutual": "Mutual likes"
+  },
+  "Messages": {
+    "chat with": "chat with",
+    "inbox": "Inbox",
+    "outbox": "Outbox"
+  },
+  "MessagesTable": {
+    "sender": "Sender",
+    "recipient": "Recipient",
+    "text": "Message",
+    "date received": "Date received",
+    "date of sending": "Date of sending",
+    "actions": "Actions",
+    "no messages": "No more messages",
+    "load more": "Load more",
+    "input placeholder": "Type a message"
+  },
+  "Filters": {
+    "results": "Results",
+    "gender": "Gender",
+    "age": "Age range",
+    "withPhoto": "With photo",
+    "orderBy": "Order by",
+    "lastUpdated": "updated",
+    "newest": "newest users"
+  },
+  "EditProfile": {
+    "editProfile": "Edit Profile",
+    "updatePhotos": "Update Photos",
+    "name": "Name",
+    "description": "Description",
+    "city": "City",
+    "country": "Country",
+    "updateFormButton": "Update profile",
+    "photosPage": "Updating photos page",
+    "uploadButton": "Upload new image",
+    "editNamePage": "Updating {name}'s page"
+  },
+  "Register": {
+    "register": "Register",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "dateOfBirth": "Date of birth",
+    "description": "Description",
+    "city": "City",
+    "country": "Country",
+    "continueButton": "Continue",
+    "registerButton": "Submit",
+    "stepButton": "Back",
+    "welcomeTitle": "Welcome to NextMatch"
+  },
+  "Validation": {
+    "nameRequired": "Name is required",
+    "nameMin": "Name must be at least 3 characters",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email address",
+    "passwordRequired": "Password is required",
+    "passwordMin": "Password must be at least 6 characters",
+    "genderRequired": "Gender is required",
+    "descriptionRequired": "Description is required",
+    "descriptionMin": "Description must be at least 3 characters",
+    "cityRequired": "City is required",
+    "countryRequired": "Country is required",
+    "dateOfBirthRequired": "Date of birth is required",
+    "dateOfBirthMinAge": "You must be at least 18 to use this app"
+  },
+  "Login": {
+    "login": "Login",
+    "welcome_again": "Welcome back to NextMatch",
+    "email_placeholder": "Email",
+    "password_placeholder": "Password",
+    "submit": "Login",
+    "forgot_password_link": "Forgot password?"
+  },
+  "Empty_modal": {
+    "modal_header": "There are no results for this filter",
+    "modal_body": "Please select a different option"
+  }
+}

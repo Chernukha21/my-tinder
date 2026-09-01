@@ -4,6 +4,7 @@ import { useSearchParams, useRouter } from 'next/navigation';
 import { useState, useCallback, Key, useEffect, useRef } from 'react';
 import useMessageStore from './useMessageStore';
 import { useShallow } from 'zustand/shallow';
+import { useTranslations } from 'next-intl';
 
 export const useMessages = (initialMessages: MessageDto[], nextCursor?: string) => {
   const cursorRef = useRef(nextCursor);
@@ -22,7 +23,7 @@ export const useMessages = (initialMessages: MessageDto[], nextCursor?: string) 
   const container = searchParams.get('container');
   const [isDeleting, setDeleting] = useState({ id: '', loading: false });
   const [loadingMore, setLoadingMore] = useState(false);
-
+  const translation = useTranslations('MessagesTable');
   useEffect(() => {
     set(initialMessages);
     cursorRef.current = nextCursor;
@@ -43,10 +44,16 @@ export const useMessages = (initialMessages: MessageDto[], nextCursor?: string) 
   }, [container, set]);
 
   const columns = [
-    { key: isOutbox ? 'recipientName' : 'senderName', label: isOutbox ? 'Recipient' : 'Sender' },
-    { key: 'text', label: 'Message' },
-    { key: 'created', label: isOutbox ? 'Date sent' : 'Date received' },
-    { key: 'actions', label: 'Actions' },
+    {
+      key: isOutbox ? 'recipientName' : 'senderName',
+      label: isOutbox ? `${translation('recipient')}` : `${translation('sender')}`,
+    },
+    { key: 'text', label: `${translation('text')}` },
+    {
+      key: 'created',
+      label: isOutbox ? `${translation('date of sending')}` : `${translation('date received')}`,
+    },
+    { key: 'actions', label: `${translation('actions')}` },
   ];
 
   const handleDeleteMessage = useCallback(

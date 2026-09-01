@@ -5,23 +5,25 @@ import { Button } from '@heroui/button';
 import NavLink from '@/components/NavLink';
 import { auth } from '@/auth';
 import UserMenu from './UserMenu';
-import { getUserInfoForNav } from '@/app/actions/userActions';
 import FiltersWrapper from './FiltersWrapper';
 import SwitchButton from '@/components/SwitchButton';
+import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+import { getTranslations } from 'next-intl/server';
 
-export default async function TopNav() {
+export const dynamic = 'force-dynamic';
+
+export default async function TopNav({ locale }: { locale: string }) {
   const session = await auth();
   const isLoggedIn = !!session?.user?.id;
 
-  const userInfo = isLoggedIn ? await getUserInfoForNav() : null;
-  const memberLinks = [
-    { href: '/members', label: 'Matches' },
-    { href: '/lists', label: 'Lists' },
-    { href: '/messages', label: 'Messages' },
-  ];
-
+  const translation = await getTranslations({ locale, namespace: 'Nav' });
   const adminLinks = [{ href: '/admin/moderation', label: 'Photo Moderation' }];
 
+  const memberLinks = [
+    { href: '/members', label: translation('members') },
+    { href: '/lists', label: translation('lists') },
+    { href: '/messages', label: translation('messages') },
+  ];
   const links = session?.user.role === 'ADMIN' ? adminLinks : memberLinks;
 
   return (
@@ -39,7 +41,7 @@ export default async function TopNav() {
           ],
         }}
       >
-        <NavbarBrand as={Link} href="/" className="gap-2">
+        <NavbarBrand as={Link} href={`/${locale}`} className="gap-2">
           <GiMatchTip className="text-3xl text-gray-200 md:text-5xl" />
           <div className="hidden items-center text-xl font-bold leading-none sm:flex md:text-3xl">
             <span className="text-gray-900">Next</span>
@@ -51,6 +53,7 @@ export default async function TopNav() {
             links.map((item) => <NavLink key={item.href} href={item.href} label={item.label} />)}
         </NavbarContent>
         <SwitchButton />
+        <LanguageSwitcher />
         <NavbarContent justify="end">
           {isLoggedIn ? (
             <UserMenu
@@ -62,10 +65,10 @@ export default async function TopNav() {
           ) : (
             <>
               <Button as={Link} href={'/login'} variant={'bordered'} className={'text-white'}>
-                Login
+                {translation('login')}
               </Button>
               <Button as={Link} href={'/register'} variant={'bordered'} className={'text-white'}>
-                Register
+                {translation('register')}
               </Button>
             </>
           )}

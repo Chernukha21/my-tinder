@@ -6,6 +6,7 @@ import useFilterStore from '@/store/useFilterStore';
 import { ChangeEvent, useEffect, useTransition } from 'react';
 import usePaginationStore from '@/store/usePaginationStore';
 import { useShallow } from 'zustand/shallow';
+import { useTranslations } from 'next-intl';
 
 export const useFilters = () => {
   const pathName = usePathname();
@@ -23,7 +24,7 @@ export const useFilters = () => {
   );
 
   const { gender, ageRange, orderBy } = filters;
-
+  const translation = useTranslations('Filters');
   useEffect(() => {
     if (gender || ageRange || orderBy) {
       setPage(1);
@@ -75,8 +76,8 @@ export const useFilters = () => {
   ];
 
   const orderByList = [
-    { label: 'Last active', value: 'updated' },
-    { label: 'Newest members', value: 'created' },
+    { label: `${translation('lastUpdated')}`, value: 'updated' },
+    { label: `${translation('newest')}`, value: 'created' },
   ];
 
   return {

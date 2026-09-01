@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { Image } from '@heroui/image';
 import { transformImageUrl } from '@/lib/util';
 import { MessageDto } from '@/types';

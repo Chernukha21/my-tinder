@@ -6,6 +6,7 @@ import usePaginationStore from '@/store/usePaginationStore';
 import { useShallow } from 'zustand/shallow';
 import { useEffect } from 'react';
 import { Button } from '@heroui/button';
+import { useTranslations } from 'next-intl';
 
 export default function PaginationComponent({ totalCount }: { totalCount: number }) {
   const { pagination, setPagination, setPageSize, setPage } = usePaginationStore(
@@ -18,13 +19,13 @@ export default function PaginationComponent({ totalCount }: { totalCount: number
   );
 
   const { pageNumber, pageSize, totalPages } = pagination;
-
+  const translations = useTranslations('Member');
   useEffect(() => {
     setPagination(totalCount);
   }, [setPagination, totalCount]);
 
   const start = (pageNumber - 1) * pageSize + 1;
-  const end = Math.min(pageNumber * pageSize, totalCount); // без -1
+  const end = Math.min(pageNumber * pageSize, totalCount);
 
   const isFirst = pageNumber === 1;
   const isLast = pageNumber === totalPages;
@@ -41,7 +42,11 @@ export default function PaginationComponent({ totalCount }: { totalCount: number
     <div className="mt-5 w-full border-t-2">
       <div className="flex flex-col items-center justify-between gap-2 py-5 md:flex-row">
         <div className="hidden text-sm text-default-500 sm:block">
-          Showing {start}-{end} of {totalCount} results
+          {translations('showingResults', {
+            start,
+            end,
+            totalCount,
+          })}
         </div>
 
         <div className="flex items-center gap-4 sm:hidden">
@@ -51,7 +56,7 @@ export default function PaginationComponent({ totalCount }: { totalCount: number
             disabled={isFirst}
             className="text-sm disabled:cursor-not-allowed disabled:opacity-50"
           >
-            Prev
+            {translations('prevButton')}
           </Button>
           <span className="text-sm">
             {pageNumber}/{totalPages || 1}
@@ -62,7 +67,7 @@ export default function PaginationComponent({ totalCount }: { totalCount: number
             disabled={isLast}
             className="text-sm disabled:cursor-not-allowed disabled:opacity-50"
           >
-            Next
+            {translations('nextButton')}
           </Button>
         </div>
         <div className="hidden sm:block">
@@ -76,7 +81,7 @@ export default function PaginationComponent({ totalCount }: { totalCount: number
           />
         </div>
         <div className="hidden flex-row items-center gap-1 md:flex">
-          Page size:
+          {translations('pagination')}:
           {[3, 6, 12].map((size) => (
             <div
               key={size}
